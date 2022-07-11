@@ -1,0 +1,6 @@
+Exjobbreport.*
+!Exjobbreport.tex
+!Exjobbreport.bib
+sources/
+fig/*.png
+!fig/COMSOLFlashInt.png
