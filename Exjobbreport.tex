@@ -287,14 +287,14 @@ a strong dependance on peak film temperature. The onset of ferroelectricity for
 these flashlamp annealed samples seem to be at a peak temperature between
 550-\SI{630}{\celsius}. Therefore samples annealed with an intensity less than
 \SI{25}{\joule/\centi\meter\squared} are omitted from some of the figures.
-The remnant polarization and the coercive fields of these samples follow similar
-patterns reaching a peak of \SI{20}{\joule\per\centi\meter\squared} and a
-minimum of \SI{0.46}{\mega\volt\per\centi\meter} respectively at a peak
-annealing temperature around \SI{711}{\celsius}. Higher temperature annealing
-shows a degradation of these ferroelectric properties.
+The remnant polarization and the coercive fields of these samples follow a similar
+pattern reaching a peak of $20.12 \pm 0.59$ \si{\joule\per\centi\meter\squared} and a
+minimum of $1.46 \pm 0.14$ \si{\mega\volt\per\centi\meter} respectively at a peak
+annealing temperature of \SI{711}{\celsius}. Higher temperature annealing
+shows a degradation of these ferroelectric properties. %TODO: Why?
 
 Figures \ref{fig:res_IntCPr} and \ref{fig:res_IntCEc} shows that the
-described experimental process in \ref{ch:fab} is indeed a valid process for
+described experimental process in Chapter \ref{ch:fab} is indeed a valid process for
 fabricating ferroelectric capacitors of this caliber with comparable remnant
 polarization and coercive fields to that of samples annealed through RTP.
 
@@ -316,14 +316,55 @@ polarization and coercive fields to that of samples annealed through RTP.
         \includegraphics[width=\linewidth]{fig/FlashIntC_DDTrends.png}
         \caption{}\label{fig:res_IntCDD}
     \end{subfigure}
-    \caption{Figure showing all measured data from an intensity-varied batch.
-    Low-doped subtrate, 200C ALD, HZO 1:1, 250C preheat, 5ms flash. RTP
-    reference is included for Endurance and Defect Density.}\label{fig:res_IntC}
+    \caption{Figure showing measured data from an sample series 1. Figures a and
+        b show the ferroelectric response of the samples at varying peak
+        annealing temperature indicating comparable ferroelectric response to
+        the RTP annealed samples presented in table \ref{tab:res_RTPref}.
+        Figure c and d show improved endurance and reduced defect density
+        respectively for all samples annealed through FLA compared to the RTP
+        sample.}\label{fig:res_IntC}
 \end{figure}
 
-Although reduced PUND characteristics were found for these samples,
-figure \ref{fig:res_IntCEndu} show an increased endurance for the flash
-annealed samples compared to the RTP reference.
+Furthermore, figure \ref{fig:res_IntCEndu} show an increased endurance for
+sample series 1 compared to the RTP reference. The comparable sample 4 flashed
+with \SI{30}{\joule\per\centi\meter\squared} had a endurance roughly 6 times
+greater at values in the range $(127 \pm 13)$ $\cdot 10^3$ cycles. The barely
+ferroelectric sample 3 flashed at \SI{25}{\joule\per\centi\meter\squared}
+did not breakdown before the measurements ended at $200$ $\cdot 10^3$ cycles and
+the endurance of these capacitors should be investigated further to reach a
+conclusion for their viability for use in certain gate stacks \cite{dawber2005physics}.
+Similarly to $P_r$ and $E_c$, annealing at a higher peak temperature results in degraded
+endurance to a value of $(82 \pm 46)$ $\cdot 10^3$ cycles. These values however
+are still an improvement compared to the RTP sample.
+
+The improved endurance could be a result of the reduced defect density of the
+flash lamp annealed films as shown in figure \ref{fig:res_IntCDD} using the
+method described in section \ref{sec:CV}. The measurements reveal a defect
+reduction of up to a factor of 3 for sample 3 and close to a factor of 2 for
+sample showing comparable $P_r$ and $E_c$ to the RTP sample. This is likely due
+to the reduced thermal budget for the FLA samples which generates less initial
+defects during the annealing step. However, after sufficiently many cycles the
+generated defects (vacancies) start to collect at the \ce{HZO} grain boundaries
+increasing the leakage through the oxide and causes the breakdown. However,
+further studies must be done to affirm this theory \cite{pesic2016physical,
+athle2022improved}. See table \ref{tab:res_series1} for a summary of the
+attained values.
+
+\begin{table}[htbp]
+    \caption{Electrical characteristics for sample 4 in sample series
+    1. See table \ref{tab:res_IntC} for processing conditions.}\label{tab:res_series1}
+    \begin{tabular}{rlrl}
+        \toprule
+        \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
+        Remnant Polarization & $P_r$ & $20.12 \pm 0.59$ &
+        \si{\micro\coulomb\per\centi\meter\squared}\\
+        Coercive Field & $E_c$ & $1.46 \pm 0.14$ & \si{\mega\volt\per\centi\meter}\\
+        Endurance & & $127 \pm 13$ & $10^3$ cycles\\
+        Defect Density & $D_d$ & $6.1 \pm 0.7$ & $10^{12}$
+        \si{\per\centi\meter\squared}
+        \\\bottomrule
+    \end{tabular}
+\end{table}
 
 
 %\begin{figure}[htbp]
