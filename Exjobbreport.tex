@@ -170,7 +170,7 @@ Mål: Redogör för metoderna på E-huset.
 
 \section{PUND and Endurance}\label{sec:PandE}
 
-\section{Capacitance-Voltage}
+\section{Capacitance-Voltage}\label{sec:CV}
 
 Frågor att besvara: 
 \begin{itemize}
@@ -201,8 +201,8 @@ the achieved temperature in the film from the structure of the samples and the
 flash parameters. Flash duration and preheating temperature were set to
 \SI{5}{\milli\second} and \SI{250}{\celsius} respectively in order to be below
 the critical crystallization temperature before the FLA
-flash~\cite{migita2019phase}. Other simulation parameters are tabulated in
-table~\ref{tab:app_simparam} and produce figure~\ref{fig:res_Comsol} showing the
+flash \cite{migita2019phase}. Other simulation parameters are tabulated in
+table \ref{tab:app_simparam} and produce figure \ref{fig:res_Comsol} showing the
 resulting back and front peak temperature for different pulse energies. The figure also
 includes pyrometer measurements of the back temperature during annealing
 (green). The discrepancies on the order of \SI{20}{\kelvin} between simulated
@@ -215,7 +215,7 @@ with the experimental data and gives an estimate of the achieved surface peak te
     \centering
     \includegraphics[width=.41\linewidth]{fig/COMSOLFlashInt.png}
     \caption{Simulated back and front peak temperatures of our samples using the
-    simulation parameters tabulated in~\ref{tab:app_simparam}. Pyrometer
+    simulation parameters tabulated in \ref{tab:app_simparam}. Pyrometer
     measurements of the back temperature measured during annealing (green) confirm
     the accuracy of these simulations.}\label{fig:res_Comsol}
 \end{figure}
@@ -226,12 +226,12 @@ sample and FLA parameters (eq~\ref{eq:app_filmtemp}). This gives a more
 convenient reference going forward using the achieved film temperature rather
 than the pulse energy when describing different samples. The usually reported
 crystallization temperature required to form the ferroelectric orthorhombic
-phase of HZO is in the range of 400~-
-\SI{600}{\celsius}~\cite{muller2012ferroelectricity, athle2022improved}.
-The simulated peak surface temperatures in the 20~-
-\SI{30}{\joule\per\square\centi\meter} pulse energy range are significantly
+phase of HZO is in the range of 400-\SI{600}{\celsius}
+\cite{muller2012ferroelectricity, athle2022improved}.
+The simulated peak surface temperatures in the
+20-\SI{30}{\joule\per\square\centi\meter} pulse energy range are significantly
 above this critical temperature and should therefore yield a sufficiently high
-peak temperature to achieve ferroelectric properties in the HZO.\@
+peak temperature to achieve ferroelectric properties in the HZO.
 
 \section{Sample Specifications and Characterization}
 As a reference point, samples were processed using rapid thermal processing
@@ -239,8 +239,8 @@ As a reference point, samples were processed using rapid thermal processing
 proves as a point of comparison for the characterization of the FLA samples
 throughout the work. The RTP samples were annealed at a temperature of
 \SI{600}{\celsius} for 30 seconds. The electrical characterization of these
-samples, as described in Chapter~\ref{ch:char}, were measured and
-tabulated in table~\ref{tab:res_RTPref}. The remnant polarization and coercive
+samples, as described in Chapter \ref{ch:char}, were measured and
+tabulated in table \ref{tab:res_RTPref}. The remnant polarization and coercive
 field are measured after a wakeup of $10^4$ cycles at a pulsing voltage of
 \SI{3}{\volt}.
 
@@ -258,11 +258,16 @@ field are measured after a wakeup of $10^4$ cycles at a pulsing voltage of
     \end{tabular}
 \end{table}
 
-The processing of the FLA samples are outlined in Section~\ref{sec:FabProc}. For
+%TODO: Maybe include here a small paragraph ensuring that all samples (including
+%RTP) is fabricated on similar substrates etc? Refering to a table in the
+%appendix! Maybe we could ensure the reader in the fabrication section and then
+%refirm with a small sentence here.
+
+The processing of the FLA samples are outlined in Section \ref{sec:FabProc}. For
 the first FLA series, hereby denoted sample series 1, the flash intensity was
-varied between 15-\SI{32.5}{\joule/\centi\meter\squared} to reach different peak
+varied between 15-\SI{32.5}{\joule\per\centi\meter\squared} to reach different peak
 temperatures in the film. The film deposition and annealing conditions for these
-samples are summarized in table~\ref{tab:res_IntC}.
+samples are summarized in table \ref{tab:res_IntC}.
 
 \begin{table}[htbp]
     \caption{Selected processing conditions for sample series 1.}\label{tab:res_IntC}
