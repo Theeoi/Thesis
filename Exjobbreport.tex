@@ -373,22 +373,106 @@ a summary of the attained values.
     \end{tabular}
 \end{table}
 
+Although sample series 1 resulted in improved endurance and lower defect density
+along with comparable PUND data to the RTP samples, the peak annealing
+temperature is still to high in order to significantly reduce the amount of
+defects in the film. A closer look at figure \ref{fig:res_IntCDD} and the barely
+ferroelectric sample 3 annealed at a flash intensity of
+\SI{25}{\joule\per\centi\meter\squared} reveal a further reduction of the defect
+density at the cost of ferroelectric response (figure \ref{fig:res_IntCPr}).
+Maintaining that low peak annealing temperature over multiple flashes could
+result in improved PUND data while not inducing additional defects.
 
-%\begin{figure}[htbp]
-    %\centering
-    %(a)\includegraphics[width=.45\textwidth]{../Fig/FlashNumA+C_PrTrends.png}
-    %(b)\includegraphics[width=.45\textwidth]{../Fig/FlashNumA+C_EcTrends.png}
-    %\caption{Figure showing Pr and Ec trends from flashnumber-varied batches. Low-doped subtrate, 200C ALD, HZO 1:1, 250C preheat, 5ms flash at $\SI{25}{\joule/\centi\meter^2}$ and \SI{20}{\joule/\centi\meter^2}.}\label{fig:res_FlashNumAC_PrEc}
-%\end{figure}
+For sample series 2 and 3, tabulated in table \ref{tab:res_NumA} and
+\ref{tab:res_NumC} respectively, the number of flashes were varied up to a
+maximum of 8 flashes for two different peak annealing temperatures at the onset
+of crystallization. The flashes were manually timed at an interval of
+approximately \SI{200}{\second}.
 
-%\begin{figure}[htbp]
-    %\centering
-    %(a)\includegraphics[width=.45\textwidth]{../Fig/FlashNumA_EnduTrends.png}
-    %(b)\includegraphics[width=.45\textwidth]{../Fig/FlashNumA_DDTrends.png}
-    %(c)\includegraphics[width=.45\textwidth]{../Fig/FlashNumC_EnduTrends.png}
-    %(d)\includegraphics[width=.45\textwidth]{../Fig/FlashNumC_DDTrends.png}
-    %\caption{Figure showing Endurance and Defect Density from flashnumber-varied batches. Low-doped subtrate, 200C ALD, HZO 1:1, 250C preheat, 5ms flash at $\SI{20}{\joule/\centi\meter^2}$. RTP reference is included.}\label{fig:res_FlashNumAC_EnduDD}
-%\end{figure}
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    2.}\label{tab:res_NumA}
+    \begin{tabular}{rlcccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & & & \\
+        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 & 200 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 & 50:50 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 630 & 630 & 630 & 630 \\
+        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    3.}\label{tab:res_NumC}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
+        Number of Flashes & & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
+    \end{tabular}
+\end{table}
+
+Resulting electrical characteristics of sample series 2 and 3 are shown in
+figures \ref{fig:res_NumACPUND} and \ref{fig:res_NumACEnduDD}. Figure
+\ref{fig:res_NumACPr} reveal an increased ferroelectric response with
+additional flashes up to a maximum of $22.98 \pm 1.02$
+\si{\micro\coulomb\per\centi\meter\squared} for sample series 2. Sample series 3
+on the other hand is not annealed to a significantly high peak temperature to
+achieve ferroelectricity until 8 flashes; but even then not to a significant
+degree. Sample series 2 show a similar degradation of the ferroelectric response
+when flashing up to 8 times as with the increased flash intensity in figure
+\ref{fig:res_IntCPr}. % TODO: Same as for IntC, why do we think this is?
+The achieved coercive field as shown in figure \ref{fig:res_NumACEc} is
+comparable with both sample series 1 and the RTP sample.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumA+C_PrTrends.png}
+        \caption{}\label{fig:res_NumACPr}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumA+C_EcTrends.png}
+        \caption{}\label{fig:res_NumACEc}    
+    \end{subfigure}
+    \caption{Plotted PUND data from sample series 2 and 3. Figure a and b show the
+    evolution of the remnant polarization and the coercive field respectively
+    for varying number of flashes for two different peak annealing temperatures.
+    Increasing the number of flashes with reduced peak annealing temperature
+    results in comparable ferroelectric response to the RTP sample as tabulated
+    in table \ref{tab:res_RTPref}.}\label{fig:res_NumACPUND}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumA_EnduTrends.png}
+        \caption{}\label{fig:res_NumAEndu}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumA_DDTrends.png}
+        \caption{}\label{fig:res_NumADD}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumC_EnduTrends.png}
+        \caption{}\label{fig:res_NumCEndu}
+    \end{subfigure}
+    \begin{subfigure}{.4\linewidth}
+        \includegraphics[width=\linewidth]{fig/FlashNumC_DDTrends.png}
+        \caption{}\label{fig:res_NumCDD}    
+    \end{subfigure}
+    \caption{Figure showing Endurance and Defect Density from sample series
+    2 and 3.}\label{fig:res_NumACEnduDD}
+\end{figure}
 
 %\begin{figure}[htbp]
     %\centering
