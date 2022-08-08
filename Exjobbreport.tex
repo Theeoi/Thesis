@@ -323,7 +323,7 @@ polarization and coercive fields to that of samples annealed through RTP.
         \includegraphics[width=\linewidth]{fig/FlashIntC_DDTrends.png}
         \caption{}\label{fig:res_IntCDD}
     \end{subfigure}
-    \caption{Plotted data from an sample series 1. Figures a and
+    \caption{Plotted data from sample series 1. Figures a and
         b show the ferroelectric response of the samples at varying peak
         annealing temperature indicating comparable ferroelectric response to
         the RTP annealed samples presented in table \ref{tab:res_RTPref}.
@@ -467,7 +467,16 @@ value where additional flashes only affects the already generated defects and
 assists in the pinning of the domains lowering $P_r$ as shown in figure
 \ref{fig:res_IntCPr}.
 
-
+Sample series 3 does not give any ferroelectric response until the 8th flash as
+shown in figure \ref{fig:res_NumACPr}. This is likely due to the low total
+thermal impact of the \SI{5}{\milli\second} pulses at this peak annealing
+temperature. However, as indicated by figure \ref{fig:res_NumCDD}, the defect
+density of these samples also increase with additional flashes, reaching
+approximately the same value as for sample series 2 but showing a significantly
+lower ferroelectric response. This implies the total energy deposited in the
+samples during flashing is enough to induce additional defects but barely enough
+to crystallize the HZO to the orthorhombic phase. See table
+\ref{tab:res_series2} for a summary of the attained values for sample series 2.
 
 \begin{figure}[htbp]
     \centering
@@ -487,9 +496,31 @@ assists in the pinning of the domains lowering $P_r$ as shown in figure
         \includegraphics[width=\linewidth]{fig/FlashNumC_DDTrends.png}
         \caption{}\label{fig:res_NumCDD}    
     \end{subfigure}
-    \caption{Figure showing Endurance and Defect Density from sample series
-    2 and 3.}\label{fig:res_NumACEnduDD}
+    \caption{Plotted endurance and defect density from sample series
+    2 and 3. Figures a and b show the data from samples series 2 while
+    figures c and d show the data from sample series
+    3. Increasing the number of flashes with reduced peak annealing temperature
+    affects the defect density up to a point where additional flashes only assists
+    in pinning the ferroelectric domains. The measured endurance of these samples
+    are greater compared to the RTP samples.}\label{fig:res_NumACEnduDD}
 \end{figure}
+
+\begin{table}[htbp]
+    \caption{Electrical characteristics for sample 3 in sample series
+    2. See table \ref{tab:res_NumA} for processing
+    conditions.}\label{tab:res_series2}
+    \begin{tabular}{rlrl}
+        \toprule
+        \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
+        Remnant Polarization & $P_r$ & $22.98 \pm 1.02$ &
+        \si{\micro\coulomb\per\centi\meter\squared}\\
+        Coercive Field & $E_c$ & $1.44 \pm 0.36$ & \si{\mega\volt\per\centi\meter}\\
+        Endurance & & $53 \pm 11$ & $10^3$ cycles\\
+        Defect Density & $D_d$ & $5.9 \pm 1.1$ & $10^{12}$
+        \si{\per\centi\meter\squared}
+        \\\bottomrule
+    \end{tabular}
+\end{table}
 
 %\begin{figure}[htbp]
     %\centering
