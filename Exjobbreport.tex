@@ -477,6 +477,9 @@ lower ferroelectric response. This implies the total energy deposited in the
 samples during flashing is enough to induce additional defects but barely enough
 to crystallize the HZO to the orthorhombic phase. See table
 \ref{tab:res_series2} for a summary of the attained values for sample series 2.
+% TODO: Sentance here for why this might be? Could be the cooling and flash rate
+% not being quick enough such that the sample spend more time simply collecting
+% defects while no crystallization can occur.
 
 \begin{figure}[htbp]
     \centering
@@ -522,7 +525,57 @@ to crystallize the HZO to the orthorhombic phase. See table
     \end{tabular}
 \end{table}
 
-Sample series 1 through 3 
+Sample series 1 through 3 show only slight performance improvements to the RTP
+samples due to the flash intensity being to high to facilitate additional
+crystallization before inducing other effects or the time required for multiple
+flashes attributing to an increased defect density without further
+crystallization. Both these effects contribute to increased domain pinning and
+eventually the breakdown of the individual capacitors. In order to minimize the
+energy needed during annealing, one could pre-crystallize the HZO in the ALD
+chamber through an increased deposition temperature during growth
+\cite{citation needed}.
+
+For sample series 4 and 5, tabulated in table \ref{tab:res_IntE} and
+\ref{tab:res_NumD} respectively, the growth temperature during annealing was
+increased from \SI{200}{\celsius} to \SI{270}{\celsius}. The HZO growth per
+cycle at this elevated temperature is reduced by roughly \SI{20}{\percent} in
+our equipment. To compensate for the lower growth per cycle the amount of cycles
+was increased to 60:60 to maintain the same HZO thickness as previous samples.
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    4.}\label{tab:res_IntE}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & \textbf{538} & \textbf{630} &
+        \textbf{711} \\
+        Number of Flashes & & 1 & 1 & 1 \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    5.}\label{tab:res_NumD}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
+        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} \\\bottomrule
+    \end{tabular}
+\end{table}
+
+The plotted data from sample series 4 is shown in figure \ref{fig:res_IntE}. 
 
 \begin{figure}[htbp]
     \centering
