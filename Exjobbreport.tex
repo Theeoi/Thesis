@@ -180,19 +180,7 @@ Frågor att besvara:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results and Analysis}\label{ch:res}
-    %Mål: Presentera serierna i en rimlig ordning och dra slutsatser från varje serie.
-    %Tre steg:
-    %\begin{enumerate}
-        %\item FlashInt och Temperatur
-        %\item FlashNum vid olika FlashInt
-        %\item Förkristallisering för att minska Tpeak (270C och seedlayer)
-    %\end{enumerate}
-    %Fokus på frågeställingar!
-    %\begin{itemize}
-        %\item Utforska möjligheten kring FLA
-        %\item Hur bra devices kan vi göra? PUND och Endurance
-        %\item Fokus på interface defects genom CV!\  
-    %\end{itemize}
+
 \section{Flashlamp Intensity and Film Temperature}
 Crystallization of the hafnia films using the flash lamp annealing (FLA)
 technique does not immediately reveal the temperature achieved in the films. Due
@@ -269,23 +257,7 @@ The processing of the FLA samples are outlined in Section \ref{sec:FabProc}. For
 the first FLA series, hereby denoted sample series 1, the flash intensity was
 varied between 15-\SI{32.5}{\joule\per\centi\meter\squared} to reach different peak
 temperatures in the film. The film deposition and annealing conditions for these
-samples are summarized in table \ref{tab:res_IntC}.
-
-\begin{table}[htbp]
-    \caption{Selected processing conditions for sample series 1.}\label{tab:res_IntC}
-    \begin{tabular}{rlccccc}
-        \toprule
-        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 & 5 \\\midrule
-        \multicolumn{1}{c}{HZO} & & & & & & \\
-        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 & 200 & 200 \\
-        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 & 50:50 & 50:50 \\\midrule
-        \multicolumn{1}{c}{FLA} & & & & & & \\
-        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & \textbf{467} & 
-        \textbf{548} & \textbf{630} & \textbf{711} & \textbf{752} \\
-        Number of Flashes & & 1 & 1 & 1 & 1 & 1 \\\bottomrule
-    \end{tabular}
-\end{table}
+samples are summarized in table \ref{tab:app_IntC}.
 
 Resulting electrical characterization from sample series 1 are shown in
 figure \ref{fig:res_IntC}. As seen in figure \ref{fig:res_IntCPr} and
@@ -359,7 +331,7 @@ a summary of the attained values.
 
 \begin{table}[htbp]
     \caption{Electrical characteristics for sample 4 in sample series
-    1. See table \ref{tab:res_IntC} for processing conditions.}\label{tab:res_series1}
+    1. See table \ref{tab:app_IntC} for processing conditions.}\label{tab:res_series1}
     \begin{tabular}{rlrl}
         \toprule
         \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
@@ -383,43 +355,11 @@ density at the cost of ferroelectric response (figure \ref{fig:res_IntCPr}).
 Maintaining that low peak annealing temperature over multiple flashes could
 result in improved PUND data while not inducing additional defects.
 
-For sample series 2 and 3, tabulated in table \ref{tab:res_NumA} and
-\ref{tab:res_NumC} respectively, the number of flashes were varied up to a
+For sample series 2 and 3, tabulated in table \ref{tab:app_NumA} and
+\ref{tab:app_NumC} respectively, the number of flashes were varied up to a
 maximum of 8 flashes for two different peak annealing temperatures at the onset
 of crystallization. The flashes were manually timed at an interval of
 approximately \SI{200}{\second}.
-
-\begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    2.}\label{tab:res_NumA}
-    \begin{tabular}{rlcccc}
-        \toprule
-        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 \\\midrule
-        \multicolumn{1}{c}{HZO} & & & & & & \\
-        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 & 200 \\
-        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 & 50:50 \\\midrule
-        \multicolumn{1}{c}{FLA} & & & & & \\
-        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & 630 & 630 & 630 & 630 \\
-        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
-    \end{tabular}
-\end{table}
-
-\begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    3.}\label{tab:res_NumC}
-    \begin{tabular}{rlccc}
-        \toprule
-        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
-        \multicolumn{1}{c}{HZO} & & & & \\
-        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 \\
-        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 \\\midrule
-        \multicolumn{1}{c}{FLA} & & & & \\
-        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
-        Number of Flashes & & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
-    \end{tabular}
-\end{table}
 
 Resulting electrical characteristics of sample series 2 and 3 are shown in
 figures \ref{fig:res_NumACPUND} and \ref{fig:res_NumACEnduDD}. Figure
@@ -510,7 +450,7 @@ to crystallize the HZO to the orthorhombic phase. See table
 
 \begin{table}[htbp]
     \caption{Electrical characteristics for sample 3 in sample series
-    2. See table \ref{tab:res_NumA} for processing
+    2. See table \ref{tab:app_NumA} for processing
     conditions.}\label{tab:res_series2}
     \begin{tabular}{rlrl}
         \toprule
@@ -535,45 +475,12 @@ energy needed during annealing, one could pre-crystallize the HZO in the ALD
 chamber through an increased deposition temperature during growth
 \cite{citation needed}.
 
-For sample series 4 and 5, tabulated in table \ref{tab:res_IntE} and
-\ref{tab:res_NumD} respectively, the growth temperature during annealing was
+For sample series 4 and 5, tabulated in table \ref{tab:app_IntE} and
+\ref{tab:app_NumD} respectively, the growth temperature during annealing was
 increased from \SI{200}{\celsius} to \SI{270}{\celsius}. The HZO growth per
 cycle at this elevated temperature is reduced by roughly \SI{20}{\percent} in
 our equipment. To compensate for the lower growth per cycle the amount of cycles
 was increased to 60:60 to maintain the same HZO thickness as previous samples.
-
-\begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    4.}\label{tab:res_IntE}
-    \begin{tabular}{rlccc}
-        \toprule
-        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
-        \multicolumn{1}{c}{HZO} & & & & \\
-        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
-        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
-        \multicolumn{1}{c}{FLA} & & & & \\
-        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & \textbf{548} & \textbf{630} &
-        \textbf{711} \\
-        Number of Flashes & & 1 & 1 & 1 \\\bottomrule
-    \end{tabular}
-\end{table}
-
-\begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    5.}\label{tab:res_NumD}
-    \begin{tabular}{rlccc}
-        \toprule
-        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
-        \multicolumn{1}{c}{HZO} & & & & \\
-        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
-        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
-        \multicolumn{1}{c}{FLA} & & & & \\
-        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
-        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} \\\bottomrule
-    \end{tabular}
-\end{table}
 
 The plotted data from sample series 4 is shown in figure \ref{fig:res_IntE}. The
 increased growth temperature does indeed reduce the peak annealing temperature
@@ -586,22 +493,6 @@ or yet to have reached the saturation point as noted at a growth temperature of
 \SI{200}{\celsius}. It would be interesting to increase the peak annealing
 temperature further to see the effects of a higher temperature anneal on the
 ferroelectric response.
-
-The endurance of these samples show similar improvement as earlier FLA treated
-samples, as seen in figure \ref{fig:res_IntEEndu}. With improvements up to a
-factor of five with comparable $P_r$ while samples without significant
-ferroelectric response do not reach breakdown $\leq 300\cdot10^3$ cycles. The
-increased endurance shows in figure \ref{fig:res_IntEDD} as well through the
-reduced defect density of these samples. Interestingly, for these samples an
-overall increase in defect density is seen even for samples which do not show
-any ferroelectric response. Increasing the peak annealing temperature seem to
-have a reduced impact on defect generation and is ultimately comparable with
-previous FLA treated samples at a peak annealing temperature of
-\SI{711}{\celsius}. This revelation seem to show that the defect generation is
-energy dependant and that defects that would be generated by the one
-\SI{30}{\joule\per\centi\meter\squared} are being generated during growth
-instead. With many defects already generated during growth, the peak annealing
-temperature is not high enough to induce additional defects. 
 
 \begin{figure}[htbp]
     \centering
@@ -630,6 +521,22 @@ temperature is not high enough to induce additional defects.
     at elevated temperature but also a reduced impact of the annealing step on
     defect generation.}\label{fig:res_IntE}
 \end{figure}
+
+The endurance of these samples show similar improvement as earlier FLA treated
+samples, as seen in figure \ref{fig:res_IntEEndu}. With improvements up to a
+factor of five with comparable $P_r$ while samples without significant
+ferroelectric response do not reach breakdown $\leq 300\cdot10^3$ cycles. The
+increased endurance shows in figure \ref{fig:res_IntEDD} as well through the
+reduced defect density of these samples. Interestingly, for these samples an
+overall increase in defect density is seen even for samples which do not show
+any ferroelectric response. Increasing the peak annealing temperature seem to
+have a reduced impact on defect generation and is ultimately comparable with
+previous FLA treated samples at a peak annealing temperature of
+\SI{711}{\celsius}. This revelation seem to show that the defect generation is
+energy dependant and that defects that would be generated by the one
+\SI{30}{\joule\per\centi\meter\squared} are being generated during growth
+instead. With many defects already generated during growth, the peak annealing
+temperature is not high enough to induce additional defects. 
 
 Sample series 4 showed that increasing growth temperature assisted in lowering
 the required peak annealing temperature to reach the onset of ferroelectricity
@@ -715,5 +622,86 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 \begin{equation}\label{eq:app_filmtemp}
     T_{peak} [\si{\kelvin}] = 495.5 + 16.3 \cdot E_{pulse} [\si{\joule\per\square\centi\meter}]
 \end{equation}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series 1.}\label{tab:app_IntC}
+    \begin{tabular}{rlccccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 & 5 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & & & \\
+        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 & 200 & 200 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 & 50:50 & 50:50 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & \textbf{467} & 
+        \textbf{548} & \textbf{630} & \textbf{711} & \textbf{752} \\
+        Number of Flashes & & 1 & 1 & 1 & 1 & 1 \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    2.}\label{tab:app_NumA}
+    \begin{tabular}{rlcccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & & & \\
+        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 & 200 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 & 50:50 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 630 & 630 & 630 & 630 \\
+        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    3.}\label{tab:app_NumC}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 200 & 200 & 200 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 50:50 & 50:50 & 50:50 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
+        Number of Flashes & & \textbf{2} & \textbf{4} & \textbf{8} \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    4.}\label{tab:app_IntE}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & \textbf{548} & \textbf{630} &
+        \textbf{711} \\
+        Number of Flashes & & 1 & 1 & 1 \\\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \caption{Selected processing conditions for sample series
+    5.}\label{tab:app_NumD}
+    \begin{tabular}{rlccc}
+        \toprule
+        \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
+        \multicolumn{1}{c}{HZO} & & & & \\
+        Growth Temperature & [\si{\celsius}] & 270 & 270 & 270 \\
+        Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
+        \multicolumn{1}{c}{FLA} & & & & \\
+        Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
+        Peak Temperature & [\si{\celsius}] & 548 & 548 & 548 \\
+        Number of Flashes & & \textbf{1} & \textbf{2} & \textbf{4} \\\bottomrule
+    \end{tabular}
+\end{table}
 
 \end{document}
