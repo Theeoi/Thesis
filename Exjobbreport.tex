@@ -553,7 +553,7 @@ was increased to 60:60 to maintain the same HZO thickness as previous samples.
         Deposition Cycles & [\ce{Hf}:\ce{Zr}] & 60:60 & 60:60 & 60:60 \\\midrule
         \multicolumn{1}{c}{FLA} & & & & \\
         Preheat Temperature & [\si{\celsius}] & 250 & 250 & 250 \\
-        Peak Temperature & [\si{\celsius}] & \textbf{538} & \textbf{630} &
+        Peak Temperature & [\si{\celsius}] & \textbf{548} & \textbf{630} &
         \textbf{711} \\
         Number of Flashes & & 1 & 1 & 1 \\\bottomrule
     \end{tabular}
@@ -639,8 +639,6 @@ temperature is still required. Using the knowledge from sample series 2 and 3 it
 might be possible to reduce the impact of annealing on defect generation even
 further. 
 
-The plotted data from sample series 5 is shown in figure \ref{fig:res_NumD}. 
-
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}{.4\linewidth}
@@ -659,8 +657,29 @@ The plotted data from sample series 5 is shown in figure \ref{fig:res_NumD}.
         \includegraphics[width=\linewidth]{fig/FlashNumD_DDTrends.png}
         \caption{}\label{fig:res_NumDDD}    
     \end{subfigure}
-    \caption{Plotted data from sample series 5.}\label{fig:res_NumD}
+    \caption{Plotted data from sample series 5. Figures a and b show the
+    ferroelectric response of the samples annealed at a peak annealing
+    temperature of \SI{548}{\celsius} over varying number of flashes. The figures
+    reveal that the temperature is not high enough to reach the onset of
+    ferroelectricity despite having been grown at an elevated ALD temperature.
+    Figure c shows the supposed endurance that is only affects by the increasing
+    leakage current during cycling. Figure d affirms the higher defect density of
+    samples grown at the elevated growth temperature and shown no effect on defect
+    generation throughout the annealing steps.}\label{fig:res_NumD}
 \end{figure}
+
+The plotted data from sample series 5 is shown in figure \ref{fig:res_NumD}. The
+peak annealing temperature for these samples are \SI{548}{\celsius} in the
+attempt to incrementally reach the onset of ferroelectricity with additional
+flashes. Figures \ref{fig:res_NumDPr} and \ref{fig:res_NumDEc} show $P_r$ and
+$E_c$ respectively and reveal that the peak annealing temperature is not
+sufficient to reach the onset of ferroelectricity for up to 4 flashes. Although
+some response is measured for all samples, this is attributed to the noisiness
+of non-ferroelectric samples. Since the samples are not ferroelectric, the
+endurance in figure \ref{fig:res_NumDEndu} show only an increasing remnant
+polarization response due to increased leakage current during cycling. Figure
+\ref{fig:res_NumDDD} show the same elevated defect density as in figure
+\ref{fig:res_IntEDD} which stay consistent throughout annealing.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclussion}\label{chap:conc}
