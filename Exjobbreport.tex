@@ -16,7 +16,7 @@
 \usepackage{lipsum}     % nonsense text blocks
 \usepackage{booktabs}   % nicer table rules
 \usepackage[version=4]{mhchem}   % fancy chemical notation
-\usepackage{siunitx}    % better unit notation
+\usepackage[alsoload=synchem]{siunitx}    % better unit notation
 \usepackage{fancyref}   % improved labels
 \usepackage{parskip}    % better paragraph splitting
 \usepackage{subcaption} % easier labeling of subfigures
@@ -250,15 +250,72 @@ stage.
 \end{figure}
 
 \subsection{Top Electrode Deposition}
-After deposition of the \ce{HfZrO2} film 
+After deposition of the \ce{HfZrO2} film, a $\sim$\SI{10}{\nano\meter} top
+contact of \ce{TiN} was deposited through sputtering using an AJA Orion 5
+sputter machine. Pumping the chamber to <\SI{2.7}{\milli\torr} and pre-cleaning
+the source for \SI{5}{\minute} the samples were sputtered at a power of
+\SI{150}{\watt}. Sputtering for $\sim$\SI{11}{\minute} at a deposition rate of
+\SI{0.15}{\nano\meter\per\second} resulted in the desired layer thickness.
+Figure \ref{fig:fab_3} shows a schematic of the samples at this stage of
+fabrication.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.40\linewidth]{example-image}
+    \caption{Schematic figure of the sample after top contact
+    sputtering.}\label{fig:fab_3}
+\end{figure}
 
 \subsection{Annealing Process}
-
+With the amorphous oxide contained between the bottom- and the top contact annealing
+could take place. Depending on the sample annealing was either done through
+rapid thermal processing (RTP) or flash lamp annealing (FLA). The reference RTP
+sample were annealed at \SI{600}{\celsius} for \SI{30}{\second} in a
+RTP-1200-100 system from UniTemp GmbH while all other samples were annealed in
+the FLA system by \SI{5}{\milli\second} pulses of varying energy and number.
+See figure \ref{fig:res_Comsol} and Appendix \ref{app:procparam} for a detailed
+overview of the number of flashes per sample and their energies.
 
 \subsection{Metal Contacting}
+In order to electrically characterize the samples, individual devices would
+have to be defined as well as covered in thicker highly conductive \ce{Au} to
+not damage the underlying structure using the probe techniques described in
+Chapter \ref{ch:char}. The devices were defined using optical lithography and
+the \ce{Au} was deposited using electron-beam evaporation. Figure
+\ref{fig:fab_4} shows a schematic of the samples at this stage of fabrication.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.40\linewidth]{example-image}
+    \caption{Schematic figure of the sample after device definition and \ce{Au}
+    deposition.}\label{fig:fab_4}
+\end{figure}
 
 \subsection{Etching of Top Contact}
+To further define the devices the \ce{TiN} top contact was etch away in order
+to avoid short circuiting. Using a wet-etch in \ce{NH4OH}:\ce{H2O2}:\ce{H2O} at
+the ratio of 1:2:5 at \SI{60}{\celsius} the \ce{TiN} was selectively etched
+away over a duration of \SI{30}{\second}. Maintaining the samples still in the
+wet-etch hindered over-etching and ensured that there was no residue \ce{TiN}
+short circuiting the capacitors. Figure \ref{fig:fab_5} shows a schematic of
+the finished samples. See figure \ref{fig:fab_babycomp} for a picture of one of
+the samples.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.40\linewidth]{example-image}
+    \caption{Schematic figure of the sample after top contact etching. This is
+    the finished sample.}\label{fig:fab_5}
+\end{figure}
+
+To summarize the chapter a step by step schematic of the entire fabrication
+process can be seen in figure \ref{fig:fab_done}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.40\linewidth]{example-image}
+    \caption{Schematic figure of the entire fabrication process.}\label{fig:fab_done}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Electrical Characterization}\label{ch:char}
@@ -320,7 +377,7 @@ peak temperature to achieve ferroelectric properties in the HZO.
 
 \section{Sample Specifications and Characterization}
 As a reference point, samples were processed using rapid thermal processing
-(RTP) as the annealing method in parallell to the FLA samples. These samples
+(RTP) as the annealing method in parallel to the FLA samples. These samples
 proves as a point of comparison for the characterization of the FLA samples
 throughout the work. The RTP samples were annealed at a temperature of
 \SI{600}{\celsius} for 30 seconds. The electrical characterization of these
