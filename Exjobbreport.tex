@@ -107,9 +107,16 @@ Mål: Introducera området och ge en överblick.\cite{athle2019development}
 
 Mål: Klargöra varför III-V (utgå från Si) och FE är intressant. Varför gör vi detta? Vad är applikationern? Få med FTJ här!
 
-\section{Ferroelectricity}
+\section{Ferroelectricity}\label{sec:ferro}
 
 Mål: Basics of FE;\  Polarisation, Domäner och PE-kurvor.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth]{example-image}
+    \caption{Schematic graph of a P-E curve.}
+    \label{fig:theo_PE}
+\end{figure}
 
 \subsection{\ce{HfZrO2}}
 
@@ -319,9 +326,57 @@ process can be seen in figure \ref{fig:fab_done}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Electrical Characterization}\label{ch:char}
 
-Mål: Redogör för metoderna på E-huset.
+To characterize the fabricated samples three different techniques were used;
+Positive-Up-Negative-Down (PUND), endurance pulsing and a Capacitance-Voltage scheme to
+quantitatively estimate the defect density of ferroelectric films integrated on
+semiconductors. \cite{persson2020method} All characterization was done at the
+Department of Electrical and Information Technology at Lund University.
 
 \section{PUND and Endurance}\label{sec:PandE}
+The PUND and endurance measurements of the samples were done simultaneously by
+endurance pulsing up to $10⁴$ cycles before conducting the PUND measurements to
+later continue the endurance pulsing until breakdown of the sample. The two
+methods are described individually in the following two sections.
+
+\subsection{PUND}\label{sec:PUND}
+The Positive-Up-Negative-Down (PUND) method is used to quantitatively measure
+the remnant polarization ($P_r$) and the coercive field ($E_c$) of a
+ferroelectric device. These properties of ferroelectric films are explained in
+Section \ref{sec:ferro}. The main goal of the technique is to remove the
+influence of leakage current in the total current in order to determine the
+amount of polarization current in the switching event.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.30\textwidth]{example-image}
+    \caption{Schematic of a PUND measurement including voltage pulses and
+    current response.}
+    \label{fig:char_PUND}
+\end{figure}
+
+Figure \ref{fig:char_PUND} illustrates the applied voltage and the current
+response of the ferroelectric device. Four voltage spikes in the shape of
+up-up-down-down are applied over the film. The first spike polarizes the film
+towards the positive and gives a current response containing both the
+polarization current as well as any leakage current. Since the polarization
+field is already positive for the second spike only the leakage current is
+measured. By removing the response of the second spike from the first one can
+isolate the polarization current in the switching event. Repeating the same
+idea for the negative-down pulses gives us the full name;
+Positive-Up-Negative-Down.
+
+Isolating the polarization current allows for better visualization of the
+ferroelectric properties through the P-E curve described in Section
+\ref{sec:ferro}. To achieve a graph as illustrated in Figure \ref{fig:theo_PE},
+the applied voltage is scaled with the film thickness to achieve a unit of
+electric field in \si{\mega\volt\per\centi\meter} and the polarization current
+is time-integrated to obtain the accumulated polarization charge at each
+electric field strength and scaled to the area of the device resulting in a
+unit of \si{\micro\coulomb\per\centi\meter\squared}. From these data the
+remnant polarization ($P_r$) and coercive field ($E_c$) is easily extracted.
+
+\subsection{Endurance}\label{sec:Endu}
+
 
 \section{Capacitance-Voltage}\label{sec:CV}
 
