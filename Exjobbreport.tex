@@ -334,9 +334,10 @@ Department of Electrical and Information Technology at Lund University.
 
 \section{PUND and Endurance}\label{sec:PandE}
 The PUND and endurance measurements of the samples were done simultaneously by
-endurance pulsing up to $10⁴$ cycles before conducting the PUND measurements to
+endurance pulsing up to $10^4$ cycles before conducting the PUND measurements to
 later continue the endurance pulsing until breakdown of the sample. The two
-methods are described individually in the following two sections.
+methods are described individually in the following two sections. As the
+methods are voltage dependant the cycling voltage was set to \SI{3}{\volt}.
 
 \subsection{PUND}\label{sec:PUND}
 The Positive-Up-Negative-Down (PUND) method is used to quantitatively measure
@@ -348,7 +349,7 @@ amount of polarization current in the switching event.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.30\textwidth]{example-image}
+    \includegraphics[width=0.40\textwidth]{example-image}
     \caption{Schematic of a PUND measurement including voltage pulses and
     current response.}
     \label{fig:char_PUND}
@@ -373,18 +374,36 @@ electric field in \si{\mega\volt\per\centi\meter} and the polarization current
 is time-integrated to obtain the accumulated polarization charge at each
 electric field strength and scaled to the area of the device resulting in a
 unit of \si{\micro\coulomb\per\centi\meter\squared}. From these data the
-remnant polarization ($P_r$) and coercive field ($E_c$) is easily extracted.
+remnant polarization ($P_r$) and coercive field ($E_c$) of each device is
+extracted.
 
 \subsection{Endurance}\label{sec:Endu}
-
+The endurance of a device is a measurement of how many cycles the device can
+endure before polarization switching no longer can be measured. Polarization
+switching induces more leakage through the device which eventually causes
+breakdown. %TODO: What causes additional leakage with cycling?
+By applying a voltage in a sawtooth pattern over the ferroelectric film the
+device is rapidly switched between the two polarization directions. Throughout
+cycling the electrical response of the device is observed and cycling is
+stopped when breakdown occurs. The number of cycles before breakdown is noted
+and assigned as the endurance of the device.
 
 \section{Capacitance-Voltage}\label{sec:CV}
+Capacitance-Voltage (CV) measurements can be used to measure a multitude of
+different properties. In this paper a specific CV measurement schema described
+by A. E. Persson et.al. in 2020 was used to quantitatively estimate the amount
+of defects in the ferroelectric films. \cite{persson2020method} The method is
+based on the hysteresis of the CV curves induced by defects before the coercive
+field is reached and the hysteresis is exaggerated by the switching current.
 
-% Frågor att besvara: 
-% \begin{itemize}
-%     \item Hur funkar metoderna? 
-%     \item Vilka defekter ser vi med respektive metod? 
-% \end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.50\textwidth]{fig/CV_hysteresis.png}
+    \caption{Figure describing the basis of the CV method. Borrowed from A. E.
+    Persson et.al. \cite{persson2020method}}
+    \label{fig:char_hysteresis}
+\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results and Analysis}\label{ch:res}
