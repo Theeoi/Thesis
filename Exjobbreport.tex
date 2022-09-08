@@ -336,8 +336,9 @@ Department of Electrical and Information Technology at Lund University.
 The PUND and endurance measurements of the samples were done simultaneously by
 endurance pulsing up to $10^4$ cycles before conducting the PUND measurements to
 later continue the endurance pulsing until breakdown of the sample. The two
-methods are described individually in the following two sections. As the
-methods are voltage dependant the cycling voltage was set to \SI{3}{\volt}.
+methods are described individually in the following two sections. Both methods
+werre performed using a Keysight B1500A parameter analyser equipped with a
+B1530A waveform generator.
 
 \subsection{PUND}\label{sec:PUND}
 The Positive-Up-Negative-Down (PUND) method is used to quantitatively measure
@@ -349,9 +350,11 @@ amount of polarization current in the switching event.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.40\textwidth]{example-image}
-    \caption{Schematic of a PUND measurement including voltage pulses and
-    current response.}
+    \includegraphics[width=0.70\textwidth]{fig/PUND.png}
+    \caption{Schematic figure of a PUND measurement. The two consecutive
+    voltage spikes only causes a ferroelectric switching event during the first
+    spike which allows for the removal of the leakage current from the total
+    current through integration.}
     \label{fig:char_PUND}
 \end{figure}
 
