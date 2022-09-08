@@ -395,15 +395,58 @@ by A. E. Persson et.al. in 2020 was used to quantitatively estimate the amount
 of defects in the ferroelectric films. \cite{persson2020method} The method is
 based on the hysteresis of the CV curves induced by defects before the coercive
 field is reached and the hysteresis is exaggerated by the switching current.
+When the voltage on the device is swept up and down the band structure across
+the film changes as illustrated in Figure \ref{fig:char_hysteresis}a and b
+respectively. Sweeping towards the positive allows for electrons to flow from
+the \ce{InAs} substrate into the oxide leading to a negative charge buildup at
+the defect states of the oxide while the opposite is true for a bias sweep
+towards the negative. This effect creates a shift of the bias voltage in the CV
+measurement as shown by Figure \ref{fig:char_hysteresis}c. By Gauss' law, the
+voltage shift $\Delta V_{th}$ and the charge density $Q_t q$ can be related by
+equation \ref{eq:char_Vshift} where $C_{ox}$ is the oxide capacitance density,
+$d$ is the oxide thickness and $\rho(x)$ is the defect charge density.
 
-\begin{figure}
+\begin{equation}\label{eq:char_Vshift}
+    \Delta V_{th} = - \frac{1}{C_{ox}d} \int_0^d x\rho(x)\ \mathrm{d}x
+    \Longrightarrow Q_t = \frac{\Delta V_{th}C_{ox}}{q}
+\end{equation}
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.50\textwidth]{fig/CV_hysteresis.png}
-    \caption{Figure describing the basis of the CV method. Borrowed from A. E.
-    Persson et.al. \cite{persson2020method}}
+    \includegraphics[width=0.65\textwidth]{fig/CV_hysteresis.png}
+    \caption{The used CV method is based on charge trapping in the voltage
+        sweeps. Figure a and b shows negative and positive charge buildup at
+        the defect states in the oxide at a positive and negative voltage sweep
+        respectively. The charge buildup in each case shifts the bias voltage
+        towards the negative and positive respectively as described in figure
+        c. The figure is borrowed from A. E. Persson et.al. \cite{persson2020method}}
     \label{fig:char_hysteresis}
 \end{figure}
 
+Equation \ref{eq:char_Vshift} allows for a quantization of the amount of
+detected traps in the oxide $Q_t$ depending on the voltage shift $\Delta
+V_{th}$ between the up and down voltage sweep. Figure \ref{fig:char_CV}
+illustrates the measurement schema used to obtain $\Delta V_{th}$ and $C_{ox}$
+for each device to calculate the defect density $Q_t$. Our measurements were
+performed using a Agilent 4294A Impedence Analyser at a temperature of
+\SI{13}{\kelvin} and a oscillation frequency and AC amplitude of
+\SI{1}{\mega\hertz} and \SI{50}{\milli\volt} respectively.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.70\textwidth]{fig/UniCV.png}
+    \caption{Schematic illustration of the CV measurement schema with the
+    desired values of $C_{ox}$ and $\Delta V_{th}$ clearly labeled. The schema
+    is divided into 4 separate sweeps done in series where the device is initially
+    polarized with a positive sweep to the maximum bias voltage (1.) in order to
+    find $C_{ox}$ followed by a negative sweep to polarize the device the opposite
+    direction (2.). To find $\Delta V_{th}$ two consecutive sweeps in opposite
+    directions are done. A target voltage above $V=0$ but well below the coercive
+    field is selected to induce the charge buildup without triggering the switching
+    event. With these parameters measured one can calculate the defect density
+    using equation \ref{eq:char_Vshift}.}
+    \label{fig:char_CV}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results and Analysis}\label{ch:res}
