@@ -109,11 +109,75 @@ Mål: Introducera området och ge en överblick.\cite{athle2019development}
 
 \section{Ferroelectricity}\label{sec:ferro}
 
-Mål: Basics of FE;\  Polarisation, Domäner och PE-kurvor.
+% Mål: Basics of FE;\  Polarisation, Domäner och PE-kurvor.
 
-\begin{figure}
+Ferroelectric materials have the property of retaining an internal electric
+field even after an external electric field is removed. Much like a
+ferromagnetic material, which most of us are familiar with, the small-scale
+fields can be aligned from an external source in order to propagate and
+strengthen the field throughout the material. In the case of ferroelectric
+materials the small-scale fields are referred to as domains where each domain
+has its own electric field strength and direction in 3D-space. The boundaries
+between these domains are not set by physical properties of the material but is
+changing depending on the electrical field orientation of the neighbouring
+domains. 
+% TODO: This might not be true! Check D. Damjanovic 'The science of hysteresis'
+
+The amount of alignment between domains of a ferroelectric material is denoted
+its polarization and is often measured in
+\si{\micro\coulomb\per\centi\meter\squared}. As a ferroelectric material is
+created the spontaneously polarized domains are unaligned and the ferroelectric
+nature of the material is obscured. However, by applying an external electric
+field over the material the domains rotate to align with the external source.
+As the external source is removed the aligned domains remain and hence also the
+built-in electric field. The polarization remaining after the removal of the
+external electric field is called the remnant polarization. The sequence of
+polarizing is illustrated in figure \ref{fig:theo_domain}.
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{example-image}
+    \includegraphics[width=0.35\textwidth]{example-image}
+    \caption{Schematic figure of the process of domain alignment ending with a
+    polarized sample without an external source.}
+    \label{fig:theo_domain}
+\end{figure}
+
+The domains are typically not uniform and may require different external field
+strength in order to "wakeup" and align themselves with the external field. The
+required external field strength to polarize a ferroelectric sample is referred
+to as the coercive field and is often measured in
+\si{\mega\volt\per\centi\meter}. The quantitative definition of the coercive
+field is described in figure \ref{fig:theo_PE} but is commonly illustrated
+using the energy landscape as in figure \ref{fig:theo_Ec}. Here the
+polarization of the ferroelectric sample is in a binary system where the
+application of an external electric field allows for the polarization to
+"topple over" to the other polarization direction when the external electric
+field is stronger than the coercive field of the sample.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.40\textwidth]{example-image}
+    \caption{2D energy landscape of the polarization of a ferroelectric
+    material. Maybe taken from R. Athle \cite{athle2019development}?}
+    \label{fig:theo_Ec}
+\end{figure}
+
+These two properties, remnant polarization ($P_r$) and coercive field ($E_c$),
+form the basis of how ferroelectric materials are characterized. These
+properties are best illustrated through a P-E curve which relates the
+polarization of a sample with the electric field strength applied to the
+sample. For a non-ferroelectric material the P-E curve would show a linear
+relationship between the two. However, for a ferroelectric material clear
+hysteresis is observed as the polarization remains with electric field
+strength approaching zero. An illustration of a P-E curve is shown in figure
+\ref{fig:theo_PE}. 
+% TODO: Describe the figure in detail here!
+% Important note: The absolute value of P is not measured. Only the change of
+% it.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.40\textwidth]{example-image}
     \caption{Schematic graph of a P-E curve.}
     \label{fig:theo_PE}
 \end{figure}
