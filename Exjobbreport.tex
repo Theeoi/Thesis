@@ -103,7 +103,7 @@ alternative to MOSFETs and bring in a new frontier of computing.
 Mål: Introducera området och ge en överblick.\cite{athle2019development}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Semiconductors and Ferroelectrics}\label{ch:semiandferro}
+\chapter{Ferroelectric Junctions}\label{ch:ferro}
 
 % Mål: Klargöra varför III-V (utgå från Si) och FE är intressant. Varför gör vi detta? Vad är applikationern? Få med FTJ här!
 
@@ -221,28 +221,73 @@ transformation \cite{migita2019phase}. Despite our best efforts, HZO grains of
 both the amorphous and monoclinic phases will most likely remain in the sample
 but maximizing the volume fraction of the orthorhombic phase is possible.
 
-\section{III-V Semiconductors}
-
-% Mål: Redogör för varför III-V är intressant. Direkt bandgap, lägre DOS --> FTJ
-
 \section{The FTJ Structure and Operation}
 
-% Mål: Med FE och III-V förklarat, sammanställ allt i hur en FTJ ser ut och
-% fungerar med banddiagram och allt.
-\cite{garcia2014ferroelectric}
+% Mål: Med FE förklarat, sammanställ allt i hur en FTJ ser ut och
+% fungerar med banddiagram och allt. Inkorporera varför III-V är bra här!
 
-\subsection{Tunneling and Leakage Mechanics}
+The concept of the Ferroelectric Tunnel Junction (FTJ) was first proposed in 1971
+but as the integration and scalability issues of ferroelectric materials of the
+time was not solved the concept was forgotten as thin films was essential for
+the functionality. The FTJ concept is based on using the polarization state to
+control the tunneling of electrons through the ferroelectric barrier. Because
+of the ferroelectric charges, the electrostatic potential of the barriers
+($\Phi$) is altered and is different depending on the polarization direction.
+Figure \ref{fig:theo_FTJband} shows a band diagram of a metal-insulator-metal
+(MIM) junction. Since the tunnel transmission depends exponentially on the
+square root of the barrier height, the current through the barrier will be
+dependant on the direction of the polarization \cite{garcia2014ferroelectric}. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.55\textwidth]{fig/img/FTJbandstructure.png}
+    \caption{Bandstructure of a MIM FTJ. Image taken from Garcia et.al. \cite{garcia2014ferroelectric}}
+    \label{fig:theo_FTJband}
+\end{figure}
+
+For the electrostatic potential to be different between the two polarization
+states the asymmetry between the two interfaces is essential. One way of
+introducing asymmetry is integrating the ferroelectric onto a semiconductor
+with a limited density of states. The use of ferroelectrics in integrated
+circuits is limited but the FTJ concept was proven to work in 2020 using
+\SI{1}{\nano\meter} HZO integrated onto \ce{Si} \cite{cheema2020one,
+mikolajick2020past}. However, FTJ devices are yet to prove sufficiently good to
+be considered for practical applications and thus further research is required
+in improved annealing and integration on III-V semiconductors to fully realize
+their potential.
+
+\subsection{Leakage Mechanics and Defects}
 
 % Mål: Nämn de olika leakage mechanics i FTJ strukturen. Vi vill helst bara ha
-% direct tunneling.
-\cite{garcia2014ferroelectric}
-\cite{pesic2016physical}
-
-\subsection{Thermal Budget and Defects}
-
-% Mål: Redogör för vilka typer av defekter vi vill åt och hur de påverkas av
+% direct tunneling --> Hög barriär. 
+% Redogör för vilka typer av defekter vi vill åt och hur de påverkas av
 % thermal budget. As/In diffusion --> Time dependent --> FLA
-\cite{kang2016structural}
+
+A looming issue of the HZO-based ferroelectric tunnel junctions (FTJ) of today
+is the increase of leakage current through the device with continued
+polarization switching (cycling). This can be attributed to the generally
+higher coercive field of HZO which causes high electrical field stress on the
+devices, limiting endurance \cite{mikolajick2020past}. The high stresses of
+cycling causes charge injection into existing vacancies which can either
+facilitate or impede the ferroelectric response. This effect is known as
+depinning and pinning of the domains respectively. Initial cycling allows for
+the redistribution of vacancies and depinning of the domains to create a more
+uniform field and allow for more domains to contribute to the polarization.
+However, further cycling generates additional vacancies at the interfaces which
+screens the bulk of the ferroelectric and makes it more difficult to reach the
+coercive field of all domains. The generated vacancies can subsequently diffuse
+into the bulk trapping charges which pins the domains from participating in the
+switching. Further vacancy generation collects at the grain boundaries of the
+HZO significantly increasing the leakage current until breakdown of the device
+\cite{pesic2016physical}. Furthermore, a paper investigating the structural
+properties of the integration of ferroelectric HZO on \ce{InAs} in 2016 showed
+the diffusion of both \ce{In} and \ce{As} atoms through the HZO layer during
+annealing which significantly affects performance of the device
+\cite{kang2016structural}.
+
+Both of these effects are related to the diffusion of defects during the
+annealing step of the ferroelectric junction fabrication.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Fabrication}\label{ch:fab}
@@ -977,7 +1022,7 @@ to a factor 5. The improved endurance is attributed to the reduced defect
 density of the films processed using FLA. This in part due to the reduced
 thermal budget of the FLA technique which reduces the diffusion of oxygen
 vacancies as well as the formation of \ce{As} and \ce{In} oxides from the
-substrate.\cite{kang2016structural} The reduced defect density allows for
+substrate \cite{kang2016structural}. The reduced defect density allows for
 additional endurance cycling before breakdown of the ferroelectric capacitor.
 
 In our efforts of further reducing the defect density, both multiple flashes at
@@ -994,7 +1039,7 @@ In order to better understand the material effects of these efforts this data
 could be combined with studies of the oxide bulk and surface to identify
 defects and their properties. In a complementary study by R. Athle et al the
 data from this study is combined with XPS data to better understand the
-defects of the samples.\cite{athle2022improved}
+defects of the samples \cite{athle2022improved}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% References
