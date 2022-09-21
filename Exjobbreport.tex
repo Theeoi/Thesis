@@ -105,7 +105,8 @@ Mål: Introducera området och ge en överblick.\cite{athle2019development}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Ferroelectric Junctions}\label{ch:ferro}
 
-% Mål: Klargöra varför III-V (utgå från Si) och FE är intressant. Varför gör vi detta? Vad är applikationern? Få med FTJ här!
+% Mål: Klargöra varför III-V (utgå från Si) och FE är intressant. Varför gör vi
+% detta? Vad är applikationern? Få med FTJ här!
 
 \section{Ferroelectricity}\label{sec:ferro}
 
@@ -137,9 +138,12 @@ polarizing is illustrated in figure \ref{fig:theo_domain}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.40\textwidth]{example-image}
-    \caption{Schematic figure of the process of domain alignment ending with a
-    polarized sample without an external source.}
+    \includegraphics[width=0.80\textwidth]{fig/img/polarized.png}
+    \caption{Schematic figure of the process of domain alignment to an external
+    electric field. Initially the domains are spontaneously polarized to
+    different polarization directions but with the application of an external
+    electric field the domains are aligned and the ferroelectric material is
+    polarized.}
     \label{fig:theo_domain}
 \end{figure}
 
@@ -176,15 +180,24 @@ over the film. For a non-ferroelectric material the P-E curve would show a
 linear relationship between the two. However, for a ferroelectric material clear
 hysteresis is observed as the polarization remains with electric field
 strength approaching zero. An illustration of a P-E curve is shown in figure
-\ref{fig:theo_PE}. 
-% TODO: Describe the figure in detail here!
-% Important note: The absolute value of P is not measured. Only the change of
-% it.
+\ref{fig:theo_PE}. The polarization is initially set to applying an external
+electric field ($E$) following the green dashed line. However, as the external
+field is reduced to zero the hysteresis of the ferroelectric material is
+revealed. Once polarized, the polarization remains without the influence of an
+external field ($P_r^+$). In order to switch the polarization, an opposite
+external electric field stronger than the coercive field of the
+material ($E_c^-$) must be applied. Removing the external field again shows
+that the polarization indeed has been switched. Important to note is that it is
+not possible to measure the absolute polarization of the ferroelectric
+materials, only the change of it as the polarization is measured through the
+current in the switching event.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.40\textwidth]{example-image}
-    \caption{Schematic graph of a P-E curve.}
+    \includegraphics[width=0.60\textwidth]{fig/img/PE.png}
+    \caption{Schematic graph of a P-E curve showing the two properties of a
+        ferroelectric material; the remnant polarization ($P_r$) and the
+        coercive field ($E_c$).}
     \label{fig:theo_PE}
 \end{figure}
 
@@ -241,7 +254,11 @@ dependant on the direction of the polarization \cite{garcia2014ferroelectric}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.55\textwidth]{fig/img/FTJbandstructure.png}
-    \caption{Bandstructure of a MIM FTJ. Image taken from Garcia et.al. \cite{garcia2014ferroelectric}}
+    \caption{Band structure of a MIM FTJ. The asymmetry between the two
+        electrodes allows for different electrostatic potential ($\Phi$)
+        depending on the polarization direction. The difference in potential
+        allows for accurate control over the tunneling current through the
+        barrier. Image taken from Garcia et.al. \cite{garcia2014ferroelectric}}
     \label{fig:theo_FTJband}
 \end{figure}
 
