@@ -270,24 +270,46 @@ higher coercive field of HZO which causes high electrical field stress on the
 devices, limiting endurance \cite{mikolajick2020past}. The high stresses of
 cycling causes charge injection into existing vacancies which can either
 facilitate or impede the ferroelectric response. This effect is known as
-depinning and pinning of the domains respectively. Initial cycling allows for
+depinning and pinning of the domains respectively. In the pristine state,
+some existing vacancies are charge injected which pins certain domains/grains
+from participating in the switching event. Initial cycling allows for
 the redistribution of vacancies and depinning of the domains to create a more
 uniform field and allow for more domains to contribute to the polarization.
-However, further cycling generates additional vacancies at the interfaces which
-screens the bulk of the ferroelectric and makes it more difficult to reach the
-coercive field of all domains. The generated vacancies can subsequently diffuse
-into the bulk trapping charges which pins the domains from participating in the
-switching. Further vacancy generation collects at the grain boundaries of the
-HZO significantly increasing the leakage current until breakdown of the device
-\cite{pesic2016physical}. Furthermore, a paper investigating the structural
-properties of the integration of ferroelectric HZO on \ce{InAs} in 2016 showed
-the diffusion of both \ce{In} and \ce{As} atoms through the HZO layer during
-annealing which significantly affects performance of the device
+This is known as the wake-up-phase. However, further cycling generates
+additional vacancies at the interfaces which screens the bulk of the
+ferroelectric and makes it more difficult to reach the coercive field of all
+domains. The generated vacancies can subsequently diffuse into the bulk
+trapping charges which pins the domains from participating in the switching.
+This is known as the fatigue phase of the ferroelectric. Further vacancy
+generation collects at the grain boundaries of the HZO significantly increasing
+the leakage current until breakdown of the device \cite{pesic2016physical}.
+Figure \ref{fig:theo_pinning} shows an illustration of the pinning and
+depinning of domains throughout cycling. Furthermore, a paper investigating the
+structural properties of the integration of ferroelectric HZO on \ce{InAs} in
+2016 showed the diffusion of both \ce{In} and \ce{As} atoms through the HZO
+layer during annealing which significantly affects performance of the device
 \cite{kang2016structural}.
 
-Both of these effects are related to the diffusion of defects during the
-annealing step of the ferroelectric junction fabrication.
+Both of these effects are induced by the diffusion of defects throughout the
+HZO. Diffusion is both temperature and time dependant so reducing the time the
+sample is at an elevated temperature is paramount to reducing the effects of
+these defects. This is known as the thermal budget of the sample. A common
+fabrication technique of ferroelectric HZO is to crystallize the oxide in the
+order of minutes called Rapid Thermal Annealing (RTP). By using other
+techniques such as Flashlamp Annealing (FLA) or Pulsed-Laser Annealing (PLA)
+are known techniques for reducing the thermal budget the samples are exposed
+to \cite{oconnor2018stabilization, grenouillet2020nanosecond, volodina2021ferroelectric}.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/img/DomainPinning.png}
+    \caption{Illustration of the (de-)pinning behavior throughout cycling and
+        how the dominant defect mechanism changes from diffusion to generation
+        for the device to enter the fatigue cycling phase. Image adapted from
+        Pesic et.al. \cite{pesic2016physical}}
+    \label{fig:theo_pinning}
+\end{figure}
+    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Fabrication}\label{ch:fab}
