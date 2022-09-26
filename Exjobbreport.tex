@@ -261,7 +261,7 @@ be considered for practical applications and thus further research is required
 in improved annealing and integration on III-V semiconductors to fully realize
 their potential.
 
-\subsection{Leakage Mechanics and Defects}
+\subsection{Leakage Mechanics and Defects}\label{sec:leakage}
 
 A looming issue of the HZO-based ferroelectric tunnel junctions (FTJ) of today
 is the increase of leakage current through the device with continued
@@ -513,12 +513,12 @@ extracted.
 The endurance of a device is a measurement of how many cycles the device can
 endure before polarization switching no longer can be measured. Polarization
 switching induces more leakage through the device which eventually causes
-breakdown. %TODO: What causes additional leakage with cycling?
-By applying a voltage in a sawtooth pattern over the ferroelectric film the
-device is rapidly switched between the two polarization directions. Throughout
-cycling the electrical response of the device is observed and cycling is
-stopped when breakdown occurs. The number of cycles before breakdown is noted
-and assigned as the endurance of the device.
+breakdown as described in section \ref{sec:leakage}. By applying a voltage in a
+sawtooth pattern over the ferroelectric film the device is rapidly switched
+between the two polarization directions. Throughout cycling the electrical
+response of the device is observed and cycling is stopped when breakdown
+occurs. The number of cycles before breakdown is noted and assigned as the
+endurance of the device.
 
 \section{Capacitance-Voltage}\label{sec:CV}
 Capacitance-Voltage (CV) measurements can be used to measure a multitude of
@@ -650,11 +650,6 @@ field are measured after a wakeup of $10^4$ cycles at a pulsing voltage of
     \end{tabular}
 \end{table}
 
-%TODO: Maybe include here a small paragraph ensuring that all samples (including
-%RTP) is fabricated on similar substrates etc? Refering to a table in the
-%appendix! Maybe we could ensure the reader in the fabrication section and then
-%refirm with a small sentence here.
-
 The processing of the FLA samples are outlined in Section \ref{sec:FabProc}. For
 the first FLA series, hereby denoted sample series 1, the flash intensity was
 varied between 15-\SI{32.5}{\joule\per\centi\meter\squared} to reach different peak
@@ -672,7 +667,10 @@ The remnant polarization and the coercive fields of these samples follow a simil
 pattern reaching a peak of $20.12 \pm 0.59$ \si{\micro\coulomb\per\centi\meter\squared} and a
 minimum of $1.46 \pm 0.14$ \si{\mega\volt\per\centi\meter} respectively at a peak
 annealing temperature of \SI{711}{\celsius}. Higher temperature annealing
-shows a degradation of these ferroelectric properties. %TODO: Why?
+shows a degradation of these ferroelectric properties. The degradation could be
+the effect of multiple factors such as thermal damage to the contacts or
+further crystallization to the non-ferroelectric monoclinic phase but further
+studies are needed to confirm these theories.
 
 Figures \ref{fig:res_IntCPr} and \ref{fig:res_IntCEc} shows that the
 described experimental process in Chapter \ref{ch:fab} is indeed a valid process for
@@ -772,9 +770,9 @@ on the other hand is not annealed to a significantly high peak temperature to
 achieve ferroelectricity until 8 flashes; but even then not to a significant
 degree. Sample series 2 show a similar degradation of the ferroelectric response
 when flashing up to 8 times as with the increased flash intensity in figure
-\ref{fig:res_IntCPr}. % TODO: Same as for IntC, why do we think this is?
-The achieved coercive field as shown in figure \ref{fig:res_NumACEc} is
-comparable with both sample series 1 and the RTP sample.
+\ref{fig:res_IntCPr} where again further studies are needed to confirm its
+causes. The achieved coercive field as shown in figure \ref{fig:res_NumACEc}
+is comparable with both sample series 1 and the RTP sample.
 
 \begin{figure}[htbp]
     \centering
@@ -819,9 +817,6 @@ lower ferroelectric response. This implies the total energy deposited in the
 samples during flashing is enough to induce additional defects but barely enough
 to crystallize the HZO to the orthorhombic phase. See table
 \ref{tab:res_series2} for a summary of the attained values for sample series 2.
-% TODO: Sentance here for why this might be? Could be the cooling and flash rate
-% not being quick enough such that the sample spend more time simply collecting
-% defects while no crystallization can occur.
 
 \begin{figure}[htbp]
     \centering
