@@ -107,8 +107,8 @@ lot of research is being conducted on designing faster, smaller and more energy
 efficient devices. A step in this direction is improving upon the basic
 building block of all devices, the transistor.
 
-The transistor is the physical component which is toggled between ones (ON) and
-zeroes (OFF) in order to store and process digital information. A common design
+The transistor is the physical component which is toggled between ones (on) and
+zeroes (off) in order to store and process digital information. A common design
 of the transistor is the so called metal-oxide-semiconductor
 field-effect-transistor (MOSFET) where the application of a voltage to a metal gate
 electrode is used to control the current through the semiconductor channel of the
@@ -117,18 +117,53 @@ in recent years reached a performance plateau primarily due to scaling
 difficulties \cite{ratnech2021advancement}.
 
 % Review of FE and FTJs from 2014. FTJ in 1971 -> forgotten
-% FeRAMs commecially available.
-\cite{garcia2014ferroelectric}
+% FeRAMs commercially available.
+As the MOSFET decreases in size, the effects of electron tunneling increase and
+eventually the difference in current between the on and off state becomes
+indistinguishable rendering the device useless. In 1971 it was theorized and
+proposed that one could develop a transistor which uses the tunneling
+characteristics of the electron as the source of the switching current. The
+concept was dubbed Ferroelectric Tunneling Junctions (FTJs) but was dismissed
+and forgotten as ferroelectric materials was not believed to work on smaller
+structures. From there the use of ferroelectric materials in transistor
+development was kept to a very small niche of specific applications where
+scalability of the devices were not an issue and can be found on the market
+today as FeRAMs and FeFETs with a junction length of >\SI{100}{\nano\meter}
+\cite{garcia2014ferroelectric, mikolajick2020past}.
 
 % Overview of FE and its uses. Mention of HZO and its perks/drawbacks.
 % First paper reporting on FE HZO.
-\cite{mikolajick2020past, boscke2011ferroelectricity}
+This was all changed in 2011 when Böscke et.al. published a paper revealing the
+successful creation of a \SI{10}{\nano\meter} ferroelectric tunneling junction
+\cite{boscke2011ferroelectricity}. They used lightly doped hafnium oxide
+(\ce{HfO2}) which was crystallized to a ferroelectric phase. A truly remarkable
+discovery which reignited a lot of interest in ferroelectric materials for
+transistor design. Ferroelectric transistors have the advantage of being
+non-volatile which means they can be read without having to restore the state
+of the transistor (rewrite). This reduces the energy consumption dramatically
+and could be a key factor in reducing the overall energy consumption of all
+digital devices. Additionally, the discovery of ferroelectric hafnium oxide is
+of great importance as \ce{HfO2} already is a common material in modern transistor
+manufacturing. This allows for a simplified integration of ferroelectric
+transistors in current device designs \cite{mikolajick2020past}.
 
 % Demonstrating a functional FTJ (on Si)
-\cite{cheema2020one, grenouillet2020nanosecond}
+Ferroelectric tunneling junctions using hafnium oxide has previously been
+demonstrated. In 2020 a \SI{1}{\nano\meter} ferroelectric thin-film was
+integrated on \ce{Si} and in 2021 a \SI{10}{\nano\meter} junction was
+integrated on \ce{InAs} \cite{cheema2020one, athle2021effects}. However, a
+common denominator of these devices is a limited endurance. A modern MOSFET
+should be able to perform at least $10^{12}$ cycles before degradation but FTJs
+of today are usually only cycled roughly $10^6$ cycles before breakdown. This
+can be amended with junction bilayers, reduced cycling voltage among other
+things but one crucial limiting factor is the thermal stresses endured by the
+device in the crystallization process.
 
 % Foundations of FLA processing of HZO
+% Successful integration in production environment (thermal budget and all
+% using nanosecond laser annealing.)
 \cite{oconnor2018stabilization}
+\cite{grenouillet2020nanosecond}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Ferroelectric Junctions}\label{ch:ferro}
