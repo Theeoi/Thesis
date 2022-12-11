@@ -6,8 +6,8 @@ The figures are produced by the FePlot repository.
 ## TODO
 
 - [x] Finish writing the results
-  - [x] Doublecheck figures
+  - [x] Double check figures
 - [x] Write the conclusion
 - [x] Write the method chapters
 - [x] Write the introduction
-- [ ] Write the adstract
+- [x] Write the abstract
