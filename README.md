@@ -9,5 +9,5 @@ The figures are produced by the FePlot repository.
   - [x] Doublecheck figures
 - [x] Write the conclusion
 - [x] Write the method chapters
-- [ ] Write the introduction
+- [x] Write the introduction
 - [ ] Write the adstract

@@ -116,8 +116,6 @@ transistor. This classic design has been steadily improved for decades but has
 in recent years reached a performance plateau primarily due to scaling
 difficulties \cite{ratnech2021advancement}.
 
-% Review of FE and FTJs from 2014. FTJ in 1971 -> forgotten
-% FeRAMs commercially available.
 As the MOSFET decreases in size, the effects of electron tunneling increase and
 eventually the difference in current between the on and off state becomes
 indistinguishable rendering the device useless. In 1971 it was theorized and
@@ -131,8 +129,6 @@ scalability of the devices were not an issue and can be found on the market
 today as FeRAMs and FeFETs with a junction length of >\SI{100}{\nano\meter}
 \cite{garcia2014ferroelectric, mikolajick2020past}.
 
-% Overview of FE and its uses. Mention of HZO and its perks/drawbacks.
-% First paper reporting on FE HZO.
 This was all changed in 2011 when Böscke et.al. published a paper revealing the
 successful creation of a \SI{10}{\nano\meter} ferroelectric tunneling junction
 \cite{boscke2011ferroelectricity}. They used lightly doped hafnium oxide
@@ -147,7 +143,6 @@ of great importance as \ce{HfO2} already is a common material in modern transist
 manufacturing. This allows for a simplified integration of ferroelectric
 transistors in current device designs \cite{mikolajick2020past}.
 
-% Demonstrating a functional FTJ (on Si)
 Ferroelectric tunneling junctions using hafnium oxide has previously been
 demonstrated. In 2020 a \SI{1}{\nano\meter} ferroelectric thin-film was
 integrated on \ce{Si} and in 2021 a \SI{10}{\nano\meter} junction was
@@ -155,15 +150,29 @@ integrated on \ce{InAs} \cite{cheema2020one, athle2021effects}. However, a
 common denominator of these devices is a limited endurance. A modern MOSFET
 should be able to perform at least $10^{12}$ cycles before degradation but FTJs
 of today are usually only cycled roughly $10^6$ cycles before breakdown. This
-can be amended with junction bilayers, reduced cycling voltage among other
-things but one crucial limiting factor is the thermal stresses endured by the
+can be amended with techniques such as junction bilayers and reduced cycling
+voltage but one crucial limiting factor is the thermal stresses endured by the
 device in the crystallization process.
 
-% Foundations of FLA processing of HZO
-% Successful integration in production environment (thermal budget and all
-% using nanosecond laser annealing.)
-\cite{oconnor2018stabilization}
-\cite{grenouillet2020nanosecond}
+To reduce the thermal stresses one would need to minimize the time and
+temperature of the crystallization process, also known as the thermal budget.
+In 2018 it was demonstrated that it was possible to achieve similar performing
+FTJs using the fast crystallization technique of Flashlamp Annealing (FLA) to
+the commonly used crystallization technique of Rapid Thermal Processing (RTP) 
+\cite{oconnor2018stabilization}. The reduction of the thermal budget on the
+devices is not only preferred for the performance of the individual transistor
+but also crucial for the successful integration into current device designs.
+Using nanosecond laser annealing, the integration of a FTJ in a production
+environment was demonstrated in 2020. Their devices showed significantly
+improved endurance over previous efforts \cite{grenouillet2020nanosecond}.
+
+These efforts show the capability of FTJs as integrated on \ce{Si} and metal
+electrodes. Integration of FTJs on III-V semiconductors have not been studied
+in as much detail. Specifically, the integration of FTJs on \ce{InAs} provide
+new challenges due to the diffusion and oxygen affinity of both \ce{In} and
+\ce{As} \cite{kang2016structural}. This paper demonstrates the improved
+performance of FTJs as integrated on \ce{InAs} using the FLA technique compared
+to RTP.
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Ferroelectric Junctions}\label{ch:ferro}
