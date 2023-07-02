@@ -14,6 +14,7 @@
 \usepackage{graphicx}   % Included graphics and some resizable boxes
 \usepackage{url}        % nice urls with line breaks 
 \usepackage{lipsum}     % nonsense text blocks
+\usepackage{tabularx}
 \usepackage{booktabs}   % nicer table rules
 \usepackage[version=4]{mhchem}   % fancy chemical notation
 \usepackage{siunitx}    % better unit notation
@@ -62,74 +63,73 @@ work provides valuable insight into low thermal budget integration of HZO on
 III-V semiconductors.
 
 %%%%% Popular Science Summary
-\chapter*{Popular Science Summary}
-\subsection*{A New Frontier of Computing}
-We all recognize the feeling of panic when your computer crashes and you realize
-you forgot to save your progress for the past couple of hours. In this scenario
-you wait for the computer to boot again and assess what you have lost. Imagine
-instead the computer booting instantly and you find yourself exactly where you
-left off. With an emerging technology in computer design this could become the
-new reality.
-
-The basic idea behind the fundamental building block of your electronic devices,
-known as the transistor, has since its invention in the 1960s been largely
-unchanged. The design which proved most successful is known as the
-Metal-Oxide-Semiconductor Field Effect Transistor (MOSFET) and is by far the
-most common design even to this day due to its cheap manufacturing process and
-its ability to be scaled down to ever smaller devices. However, in the last
-decade one has started to reach the limits of the MOSFET design, primarily due
-to limited scalability, and alternative designs are actively being explored.
-
-A promising design is the Ferroelectric Tunnel Junction (FTJ) which utilizes the
-small dimensions of the transistor to its advantage where electrons tunnel
-through a thin barrier. This barrier is then manipulated to either allow
-electrons though or not, resulting in the characteristic transistor
-functionality. In addition to being intrinsically small, the ferroelectric
-barrier allows the transistor to be toggleable where the state of the transistor
-is maintained even though power is lost. This ability means that electronic
-devices utilizing this design does not have to be booted up, as all transistors
-are already set to the desired state. Additionally, as power is only consumed as
-transistors are being toggled between states, these devices could reduce power
-consumption lengthening the battery life across all devices.
-
-However, for this to become the new reality of computers, the FTJ design must be
-improved further to prove as an effective alternative to the MOSFET design. One
-limiting factor is believed to be the interfaces of the ferroelectric barrier
-layer. Utilizing a new technique known as Flash-Lamp Annealing (FLA) the
-processing of the ferroelectric barrier layer can be made up to 10 000 times
-faster which could significantly improve the interfaces. This as the material
-can set much faster resulting in better defined interfaces. If successful, this
-could be a crucial step for this new transistor design to become a viable
-alternative to MOSFETs and bring in a new frontier of computing.
+% \chapter*{Popular Science Summary}\vspace{-4em}
+% We all recognize the feeling of panic when your computer crashes and you realize
+% you forgot to save your progress for the past couple of hours. In this scenario
+% you wait for the computer to boot again and assess what you have lost. Imagine
+% instead the computer booting instantly and you find yourself exactly where you
+% left off. With an emerging technology in computer design this could become the
+% new reality.
+%
+% The basic idea behind the fundamental building block of your electronic devices,
+% known as the transistor, has since its invention in the 1960s been largely
+% unchanged. The design which proved most successful is known as the
+% Metal-Oxide-Semiconductor Field Effect Transistor (MOSFET) and is by far the
+% most common design even to this day due to its cheap manufacturing process and
+% its ability to be scaled down to ever smaller devices. However, in the last
+% decade one has started to reach the limits of the MOSFET design, primarily due
+% to limited scalability, and alternative designs are actively being explored.
+%
+% A promising design is the Ferroelectric Tunnel Junction (FTJ) which utilizes the
+% small dimensions of the transistor to its advantage where electrons tunnel
+% through a thin barrier. This barrier is then manipulated to either allow
+% electrons though or not, resulting in the characteristic transistor
+% functionality. In addition to being intrinsically small, the ferroelectric
+% barrier allows the transistor to be toggleable where the state of the transistor
+% is maintained even though power is lost. This ability means that electronic
+% devices utilizing this design does not have to be booted up, as all transistors
+% are already set to the desired state. Additionally, as power is only consumed as
+% transistors are being toggled between states, these devices could reduce power
+% consumption lengthening the battery life across all devices.
+%
+% However, for this to become the new reality of computers, the FTJ design must be
+% improved further to prove as an effective alternative to the MOSFET design. One
+% limiting factor is believed to be the interfaces of the ferroelectric barrier
+% layer. Utilizing a new technique known as Flash-Lamp Annealing (FLA) the
+% processing of the ferroelectric barrier layer can be made up to 10 000 times
+% faster which could significantly improve the interfaces. This as the material
+% can set much faster resulting in better defined interfaces. If successful, this
+% could be a crucial step for this new transistor design to become a viable
+% alternative to MOSFETs and bring in a new frontier of computing.
 
 %%%%% Preface
-\chapter*{Self-reflection and Acknowledgements}
-Before you is a masters thesis performed and (mostly) written during a
-pandemic. When the project started in January 2021 there was continuous talk
-about the reopening only being a couple of weeks ahead and towards the end me
-and my supervisor were both surprised that we'd only met in person twice during
-the full year. Luckily, the lab was still available and after an intense spring
-of equipment training and method teachings I was ready to start fabricate and
-characterize ferroelectric capacitors on my own. Many long days and a couple of
-destroyed \ce{InAs}-substrates later all data was collected and visualized and
-the process of putting words to my actions ensued. In this process I noticed a
-mistake, I found myself re-reading many of the articles I had read during the
-spring to find the sources to back my claims. I should have found a reliable
-process and started indexing my sources earlier. In the end this set me back
-and in late November 2021 I realized I would not be able to finish writing the
-thesis before the December deadline. This also hindered me from dedicating
-enough time to polishing the figures in the result section. Furthermore, a
-special year for Lund was in the works with a coming Lundakarneval which ended
-up taking more of my attention than I anticipated. A year later in December
-2022 I wrote the final sentence of this thesis now in your possession.
-
-I wish to give special thanks to my supervisor Mattias Borg for his insights
-and guidance throughout the project as well as his patience in me finishing
-this thesis. This would not have been possible without our weekly checkups,
-even though they were done through a computer screen.\\
-I also wish to thank Robin Athle for teaching me the laboratory equipment and
-the methods used in this thesis. Thanks for making yourself available for
-questions big and small and being an inspiration to keep pushing further.
+% \chapter*{Self-reflection and Acknowledgements}
+% Before you is a masters thesis performed and (mostly) written during a
+% pandemic. When the project started in January 2021 there was continuous talk
+% about the reopening only being a couple of weeks ahead and towards the end me
+% and my supervisor were both surprised that we'd only met in person twice during
+% the full year. Luckily, the lab was still available and after an intense spring
+% of equipment training and method teachings I was ready to start fabricate and
+% characterize ferroelectric capacitors on my own. Many long days and a couple of
+% destroyed \ce{InAs}-substrates later all data was collected and visualized and
+% the process of putting words to my actions ensued. In this process I noticed a
+% mistake, I found myself re-reading many of the articles I had read during the
+% spring to find the sources to back my claims. I should have found a reliable
+% process and started indexing my sources earlier. In the end this set me back
+% and in late November 2021 I realized I would not be able to finish writing the
+% thesis before the December deadline. This also hindered me from dedicating
+% enough time to polishing the figures in the result section. Furthermore, a
+% special year for Lund was in the works with a coming Lundakarneval which ended
+% up taking more of my attention than I anticipated. A year later in December
+% 2022 I wrote the final sentence of this thesis now in your possession.
+%
+% I wish to give special thanks to my supervisor Mattias Borg for his insights
+% and guidance throughout the project as well as his patience in me finishing
+% this thesis. This would not have been possible without our weekly checkups,
+% even though they were done through a computer screen.\\
+% I also wish to thank Robin Athle for teaching me the laboratory equipment and
+% the methods used in this thesis. Thanks for making yourself available for
+% questions big and small and being an inspiration to keep pushing further.
 
 %% ToC etc
 \tableofcontents
@@ -233,6 +233,17 @@ the domain field directions. The domain boundaries can arise from electrical
 and thermal treatment of the samples but are mostly determined by the
 spontaneously oriented fields of the domains \cite{damjanovic2006hysteresis}.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.80\textwidth]{fig/img/polarized.png}
+    \caption{Schematic figure of the process of domain alignment to an external
+    electric field. Initially the domains are spontaneously polarized to
+    different polarization directions but with the application of an external
+    electric field the domains are aligned and the ferroelectric material is
+    polarized.}
+    \label{fig:theo_domain}
+\end{figure}
+
 The amount of alignment between domains of a ferroelectric material is denoted
 its polarization and is often measured in
 \si{\micro\coulomb\per\centi\meter\squared}. As a ferroelectric material is
@@ -246,13 +257,15 @@ polarizing is illustrated in figure \ref{fig:theo_domain}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.80\textwidth]{fig/img/polarized.png}
-    \caption{Schematic figure of the process of domain alignment to an external
-    electric field. Initially the domains are spontaneously polarized to
-    different polarization directions but with the application of an external
-    electric field the domains are aligned and the ferroelectric material is
-    polarized.}
-    \label{fig:theo_domain}
+    \includegraphics[width=0.95\textwidth]{fig/img/coercivefield.png}
+    \caption{Energy landscape of a ferroelectric material through the
+    polarization event. In the absence of an external electric field the
+    polarization state is bound to its current trough. But with the application
+    of a small electric field the potential between the barriers are lowered until
+    the field if eventually greater than the coercive field $E_c$ and the
+    polarization of the material is switched. Figure taken from R. Athle
+    \cite{athle2019development}.}
+    \label{fig:theo_Ec}
 \end{figure}
 
 The domains are typically not uniform and may require different external field
@@ -269,15 +282,11 @@ field is stronger than the coercive field of the sample.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{fig/img/coercivefield.png}
-    \caption{Energy landscape of a ferroelectric material through the
-    polarization event. In the absence of an external electric field the
-    polarization state is bound to its current trough. But with the application
-    of a small electric field the potential between the barriers are lowered until
-    the field if eventually greater than the coercive field $E_c$ and the
-    polarization of the material is switched. Figure taken from R. Athle
-    \cite{athle2019development}.}
-    \label{fig:theo_Ec}
+    \includegraphics[width=0.60\textwidth]{fig/img/PE.png}
+    \caption{Schematic graph of a P-E curve showing the two properties of a
+        ferroelectric material; the remnant polarization ($P_r$) and the
+        coercive field ($E_c$).}
+    \label{fig:theo_PE}
 \end{figure}
 
 These two properties, remnant polarization ($P_r$) and coercive field ($E_c$),
@@ -289,7 +298,7 @@ linear relationship between the two. However, for a ferroelectric material clear
 hysteresis is observed as the polarization remains with electric field
 strength approaching zero. An illustration of a P-E curve is shown in figure
 \ref{fig:theo_PE}. The polarization is initially set to applying an external
-electric field ($E$) following the green dashed line. However, as the external
+electric field ($E$) following the green dotted line. However, as the external
 field is reduced to zero the hysteresis of the ferroelectric material is
 revealed. Once polarized, the polarization remains without the influence of an
 external field ($P_r^+$). In order to switch the polarization, an opposite
@@ -300,15 +309,6 @@ not possible to measure the absolute polarization of the ferroelectric
 materials, only the change of it as the polarization is measured through the
 current in the switching event.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.60\textwidth]{fig/img/PE.png}
-    \caption{Schematic graph of a P-E curve showing the two properties of a
-        ferroelectric material; the remnant polarization ($P_r$) and the
-        coercive field ($E_c$).}
-    \label{fig:theo_PE}
-\end{figure}
-
 \subsection{\ce{HfZrO2}}
 
 Ferroelectric materials were first conceptualized in the 1950s along with the
@@ -316,9 +316,9 @@ boom of the computing era. However, one quickly encountered integration and
 scalability issues with the ferroelectric materials of the time and the concept
 was soon forgotten to the well known MOSFET architecture
 \cite{mikolajick2020past}. In 2011 the field of ferroelectrics was revived with
-the discovery of ferroelectric \ce{HfO2}. Hafnium oxide was and is a commonly
-used oxide in integrated circuits today and could hence overcome the previous
-integration issues \cite{boscke2011ferroelectricity}. An intermediary
+the discovery of ferroelectric hafnium oxide (\ce{HfO2}). Hafnium oxide was and
+is a commonly used oxide in integrated circuits today and could hence overcome
+the previous integration issues \cite{boscke2011ferroelectricity}. An intermediary
 orthorhombic phase (O) was theorized between the then known stable,
 non-ferroelectric amorphous (A) and monoclinic phases (M). The orthorhombic
 phase is non-centrosymmetric enabling the ferroelectric polarization behaviour
@@ -327,13 +327,14 @@ composition ranges the ferroelectric, orthorhombic phase of \ce{HfO2} was more
 easily stabilized and was later proved to be scalable overcoming even the
 second hurdle 60 years prior \cite{muller2012ferroelectricity, cheema2020one}.
 
-The orthorhombic phase of \ce{HfZrO2} (HZO) is reached through annealing and is
-highly dependant on both film composition as well as time and temperature of the
-annealing step. The equal distribution of \ce{Hf_{0.5}Zr_{0.5}O2} is known to
-be the optimal choice for both stability and ferroelectric response
+The orthorhombic phase of \ce{Hf_{1-x}Zr_xO2} (HZO) is reached through
+annealing and is highly dependant on both film composition as well as time and
+temperature of the annealing step. The equal composition of
+\ce{Hf_{0.5}Zr_{0.5}O2}, where every other \ce{Hf} atom is replaced by \ce{Zr},
+is known to be the optimal choice for both stability and ferroelectric response
 \cite{muller2012ferroelectricity}. A thorough investigation of the phase
 transformations of HZO in 2019 showed the transformation from the orthorhombic
-to the monoclinic phase requiring a volume expansion. Capping the amorphous
+to the monoclinic phase requires a volume expansion. Capping the amorphous
 film before annealing is hence a big step in suppressing the $O \rightarrow M$
 transformation \cite{migita2019phase}. Despite our best efforts, HZO grains of
 both the amorphous and monoclinic phases will most likely remain in the sample
@@ -377,6 +378,16 @@ their potential.
 
 \subsection{Leakage Mechanics and Defects}\label{sec:leakage}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{fig/img/DomainPinning.png}
+    \caption{Illustration of the (de-)pinning behavior throughout cycling and
+        how the dominant defect mechanism changes from diffusion to generation
+        for the device to enter the fatigue cycling phase. Image adapted from
+        Pesic et.al. \cite{pesic2016physical}}
+    \label{fig:theo_pinning}
+\end{figure}
+    
 A looming issue of the HZO-based ferroelectric tunnel junctions (FTJ) of today
 is the increase of leakage current through the device with continued
 polarization switching (cycling). This can be attributed to the generally
@@ -385,10 +396,10 @@ devices, limiting endurance \cite{mikolajick2020past}. The high stresses of
 cycling causes charge injection into existing vacancies which can either
 facilitate or impede the ferroelectric response. This effect is known as
 depinning and pinning of the domains respectively. In the pristine state,
-some existing vacancies are charge injected which pins certain domains/grains
+some existing charge injected vacancies pin certain domains/grains
 from participating in the switching event. Initial cycling allows for
-the redistribution of vacancies and depinning of the domains to create a more
-uniform field and allow for more domains to contribute to the polarization.
+the redistribution of these vacancies, depinning the domains and creating a more
+uniform field which allow for more domains to contribute to the polarization.
 This is known as the wake-up-phase. However, further cycling generates
 additional vacancies at the interfaces which screens the bulk of the
 ferroelectric and makes it more difficult to reach the coercive field of all
@@ -414,16 +425,6 @@ techniques such as Flashlamp Annealing (FLA) or Pulsed-Laser Annealing (PLA)
 are known techniques for reducing the thermal budget the samples are exposed
 to \cite{oconnor2018stabilization, grenouillet2020nanosecond, volodina2021ferroelectric}.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{fig/img/DomainPinning.png}
-    \caption{Illustration of the (de-)pinning behavior throughout cycling and
-        how the dominant defect mechanism changes from diffusion to generation
-        for the device to enter the fatigue cycling phase. Image adapted from
-        Pesic et.al. \cite{pesic2016physical}}
-    \label{fig:theo_pinning}
-\end{figure}
-    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Fabrication}\label{ch:fab}
@@ -463,7 +464,7 @@ fabrication the resulting capacitors have the parameters as stated in table
 
 \subsection{InAs Wafer Preparation}
 The initial substrate was a low doped \ce{InAs} \SI{4}{\inch} wafer with a
-layer of \ce{In} and \ce{As} oxides on top. Since the wafer is to be used as
+layer of native oxides on top. Since the wafer is to be used as
 bottom contact of our capacitors a wet etch was required before any film
 deposition was possible. The wafer was etched in 10:1 \ce{HCl} acid for
 \SI{30}{\second} and rinsed in deionized \ce{H2O} to remove any oxides. The
@@ -566,6 +567,44 @@ process can be seen in figure \ref{fig:fab_done}.
     \caption{Schematic figure of the entire fabrication process.}\label{fig:fab_done}
 \end{figure}
 
+\newpage
+\section{Fabricated Sample Series}
+\begin{table}[htbp]
+    \centering
+    \caption{Description of the fabricated samples in each series.}\label{tab:fab_series}
+    \begin{tabularx}{.8\textwidth}{cX}
+        \toprule
+        Series & Samples description \\\midrule\vspace{.5em}
+        1 &  Five samples annealed with varied flash energy density from
+        \SI{15}{\joule\per\centi\meter\squared} to
+        \SI{32.5}{\joule\per\centi\meter\squared}. Oxide is grown at an ALD
+        chamber temperature of \SI{200}{\celsius}. This series also contains
+        one additional sample annealed with rapid thermal processing (RTP).
+        \\\vspace{.5em} 
+        2 & Four samples annealed with varied number of flashes from 1 to 8.
+        All flashes have an energy density of
+        \SI{25}{\joule\per\centi\meter\squared}. Oxide is grown at an ALD chamber temperature of \SI{200}{\celsius}. \\\vspace{.5em}
+        3 &  Three samples annealed with varied number of flashes from 2 to 8.
+        All flashes have an energy density of
+        \SI{20}{\joule\per\centi\meter\squared}. Oxide is grown at an ALD chamber temperature of \SI{200}{\celsius}. \\\vspace{.5em}
+        4 &  Three samples annealed with varied flash energy density from \SI{20}{\joule\per\centi\meter\squared} to
+        \SI{30}{\joule\per\centi\meter\squared}. Oxide is grown at an elevated
+        ALD chamber temperature of \SI{270}{\celsius}. \\
+        5 & Three samples annealed with varied number of flashes from 1 to 4.
+        All flashes have an energy density of
+        \SI{20}{\joule\per\centi\meter\squared}. Oxide is grown at an elevated
+        ALD chamber temperature of \SI{270}{\celsius}. \\\bottomrule 
+    \end{tabularx}
+\end{table}
+
+Using the process described in section \ref{sec:FabProc}, five series of
+different samples were fabricated. Each sample in the series was annealed
+differently depending on the series and some series contain oxides grown at an
+elevated ALD chamber temperature. See table \ref{tab:fab_series} for a summary
+of each series. See Appendix \ref{app:procparam} for detailed processing
+conditions for each sample. Each fabricated sample has multiple ferroelectric
+capacitors (devices) as shown in figure \ref{fig:fab_babycomp}.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Electrical Characterization}\label{ch:char}
 
@@ -573,7 +612,13 @@ To characterize the fabricated samples three different techniques were used;
 Positive-Up-Negative-Down (PUND), endurance pulsing and a Capacitance-Voltage scheme to
 quantitatively estimate the defect density of ferroelectric films integrated on
 semiconductors. \cite{persson2020method} All characterization was done at the
-Department of Electrical and Information Technology at Lund University.
+Department of Electrical and Information Technology at Lund University. The
+equipment used is only able to probe the devices from the top electrodes. To
+access the \ce{InAs} substrate (bottom electrode) a short-circuit was created
+by breaking the oxide of one device and use that device as ground while probing
+other devices with intact oxides. This way we know there is no potential
+difference between the \ce{InAs} substrate and the probing electrode with a
+broken oxide.
 
 \section{PUND and Endurance}\label{sec:PandE}
 The PUND and endurance measurements of the samples were done simultaneously by
@@ -650,7 +695,9 @@ towards the negative. This effect creates a shift of the bias voltage in the CV
 measurement as shown by Figure \ref{fig:char_hysteresis}c. By Gauss' law, the
 voltage shift $\Delta V_{th}$ and the charge density $Q_t q$ can be related by
 equation \ref{eq:char_Vshift} where $C_{ox}$ is the oxide capacitance density,
-$d$ is the oxide thickness and $\rho(x)$ is the defect charge density.
+$d$ is the oxide thickness and $\rho(x)$ is the defect charge density. For each
+measured device, $C_{ox}$ is scaled to the area of the top electrode as seen in
+figure \ref{fig:fab_babycomp}.
 
 \begin{equation}\label{eq:char_Vshift}
     \Delta V_{th} = - \frac{1}{C_{ox}d} \int_0^d x\rho(x)\ \mathrm{d}x
@@ -659,7 +706,7 @@ $d$ is the oxide thickness and $\rho(x)$ is the defect charge density.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.65\textwidth]{fig/img/CV_hysteresis.png}
+    \includegraphics[width=0.62\textwidth]{fig/img/CV_hysteresis.png}
     \caption{The used CV method is based on charge trapping in the voltage
         sweeps. Figure a and b shows negative and positive charge buildup at
         the defect states in the oxide at a positive and negative voltage sweep
@@ -697,7 +744,7 @@ performed using a Agilent 4294A Impedence Analyser at a temperature of
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results and Analysis}\label{ch:res}
 
-\section{Flashlamp Intensity and Film Temperature}
+\section{Flashlamp Energy Density and Film Temperature}
 Crystallization of the hafnia films using the flash lamp annealing (FLA)
 technique does not immediately reveal the temperature achieved in the films. Due
 to the short time frames and the geometry of the FLA setup, one must simulate
@@ -725,10 +772,10 @@ with the experimental data and gives an estimate of the achieved surface peak te
 \end{figure}
 
 Figure~\ref{fig:res_Comsol} reveal a linear relationship between the pulse
-energy ($E_{pulse}$) and the peak HZO film temperature ($T_{peak}$) for our
+energy density ($E_{pulse}$) and the peak HZO film temperature ($T_{peak}$) for our
 sample and FLA parameters (eq~\ref{eq:app_filmtemp}). This gives a more
 convenient reference going forward using the achieved film temperature rather
-than the pulse energy when describing different samples. The usually reported
+than the pulse energy density when describing different samples. The usually reported
 crystallization temperature required to form the ferroelectric orthorhombic
 phase of HZO is in the range of 400-\SI{600}{\celsius}
 \cite{muller2012ferroelectricity, athle2022improved}.
@@ -738,18 +785,20 @@ above this critical temperature and should therefore yield a sufficiently high
 peak temperature to achieve ferroelectric properties in the HZO.
 
 \section{Sample Specifications and Characterization}
-As a reference point, samples were processed using rapid thermal processing
-(RTP) as the annealing method in parallel to the FLA samples. These samples
+As a reference point, a sample was processed using rapid thermal processing
+(RTP) as the annealing method in parallel to other FLA samples. This sample
 proves as a point of comparison for the characterization of the FLA samples
-throughout the work. The RTP samples were annealed at a temperature of
-\SI{600}{\celsius} for 30 seconds. The electrical characterization of these
-samples, as described in Chapter \ref{ch:char}, were measured and
-tabulated in table \ref{tab:res_RTPref}. The remnant polarization and coercive
-field are measured after a wakeup of $10^4$ cycles at a pulsing voltage of
-\SI{3}{\volt}.
+throughout the work. The RTP sample was annealed at a temperature of
+\SI{600}{\celsius} for 30 seconds. The electrical characterization of this
+sample, as described in Chapter \ref{ch:char}, was measured and
+tabulated in table \ref{tab:res_RTPref}. Measurements were done on approximately
+10-15 devices per sample to show statistical significance. The remnant
+polarization and coercive field are measured after a wakeup of $10^4$ cycles at
+a pulsing voltage of \SI{3}{\volt}.
 
 \begin{table}[htbp]
-    \caption{Electrical characteristics for the RTP reference samples.}\label{tab:res_RTPref}
+    \caption{Electrical characteristics for the RTP reference sample over 10-15
+    devices.}\label{tab:res_RTPref}
     \begin{tabular}{rlrl}
         \toprule
         \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
@@ -764,27 +813,31 @@ field are measured after a wakeup of $10^4$ cycles at a pulsing voltage of
     \end{tabular}
 \end{table}
 
-The processing of the FLA samples are outlined in Section \ref{sec:FabProc}. For
-the first FLA series, hereby denoted sample series 1, the flash intensity was
+The processing of the FLA samples are outlined in Section \ref{sec:FabProc} and
+the different sample series are outlined in table \ref{tab:fab_series}. For
+the first FLA series, hereby denoted series 1, the flash energy density was
 varied between 15-\SI{32.5}{\joule\per\centi\meter\squared} to reach different peak
 temperatures in the film. The film deposition and annealing conditions for these
 samples are summarized in table \ref{tab:app_IntC}.
 
-Resulting electrical characterization from sample series 1 are shown in
+Resulting electrical characterization from series 1 are shown in
 figure \ref{fig:res_IntC}. As seen in figure \ref{fig:res_IntCPr} and
 \ref{fig:res_IntCEc} the PUND characteristics show ferroelectric behaviour with
 a strong dependence on peak film temperature. The onset of ferroelectricity for
-these flashlamp annealed samples seem to be at a peak temperature between
-550-\SI{630}{\celsius}. Therefore samples annealed with an intensity less than
-\SI{25}{\joule/\centi\meter\squared} are omitted from some of the figures.
-The remnant polarization and the coercive fields of these samples follow a similar
-pattern reaching a peak of $20.12 \pm 0.59$ \si{\micro\coulomb\per\centi\meter\squared} and a
-minimum of $1.46 \pm 0.14$ \si{\mega\volt\per\centi\meter} respectively at a peak
-annealing temperature of \SI{711}{\celsius}. Higher temperature annealing
-shows a degradation of these ferroelectric properties. The degradation could be
-the effect of multiple factors such as thermal damage to the contacts or
-further crystallization to the non-ferroelectric monoclinic phase but further
-studies are needed to confirm these theories.
+these flashlamp annealed samples seem to be at a flash energy density between
+20-\SI{25}{\joule\per\centi\meter\squared} (peak temperature between
+550-\SI{630}{\celsius}). Therefore samples annealed with an energy density less than
+\SI{25}{\joule\per\centi\meter\squared} are omitted from some of the figures.
+The remnant polarization and the coercive fields of the samples in this series
+follow a similar pattern reaching a peak of $20.12 \pm 0.59$
+\si{\micro\coulomb\per\centi\meter\squared} and a minimum of $1.46 \pm 0.14$
+\si{\mega\volt\per\centi\meter} respectively at a flash energy density of
+\SI{30}{\joule\per\centi\meter\squared} (peak annealing temperature of
+\SI{711}{\celsius}). Higher temperature annealing shows a degradation of these
+ferroelectric properties. The degradation could be the effect of multiple
+factors such as thermal damage to the contacts or further crystallization to
+the non-ferroelectric monoclinic phase but further studies are needed to
+confirm this hypothesis.
 
 Figures \ref{fig:res_IntCPr} and \ref{fig:res_IntCEc} shows that the
 described experimental process in Chapter \ref{ch:fab} is indeed a valid process for
@@ -809,20 +862,23 @@ polarization and coercive fields to that of samples annealed through RTP.
         \includegraphics[width=\linewidth]{fig/FlashIntC_DDTrends.png}
         \caption{}\label{fig:res_IntCDD}
     \end{subfigure}
-    \caption{Plotted data from sample series 1. Figures a and
+    \caption{Plotted data from series 1. Figures a and
         b show the ferroelectric response of the samples at varying peak
         annealing temperature indicating comparable ferroelectric response to
-        the RTP annealed samples presented in table \ref{tab:res_RTPref}.
-        Figure c and d show improved endurance and reduced defect density
-        respectively for all samples annealed through FLA compared to the RTP
-        sample.}\label{fig:res_IntC}
+        the RTP annealed sample presented in table \ref{tab:res_RTPref}.
+        Figure c show improved endurance of one highlighted device for each
+        sample. See table \ref{tab:res_series1} for an aggregated value for
+        multiple devices. Figure d show reduced defect density for all samples
+        annealed through FLA compared to the RTP sample.}\label{fig:res_IntC}
 \end{figure}
 
-Furthermore, figure \ref{fig:res_IntCEndu} show an increased endurance for
-sample series 1 compared to the RTP reference. The comparable sample 4 flashed
-with \SI{30}{\joule\per\centi\meter\squared} had a endurance roughly 6 times
+Furthermore, figure \ref{fig:res_IntCEndu} show an increased endurance for all
+samples in series 1 compared to the RTP reference. The figure highlight one
+device from each sample but an aggregate value can be found in table
+\ref{tab:res_series1}. The most comparable sample flashed
+with \SI{30}{\joule\per\centi\meter\squared} had an endurance roughly 6 times
 greater at values in the range $(127 \pm 13)$ $\cdot 10^3$ cycles. The barely
-ferroelectric sample 3 flashed at \SI{25}{\joule\per\centi\meter\squared}
+ferroelectric sample flashed at \SI{25}{\joule\per\centi\meter\squared}
 did not breakdown before the measurements ended at $200$ $\cdot 10^3$ cycles and
 the endurance of these capacitors should be investigated further to reach a
 conclusion for their viability for use in certain gate stacks \cite{dawber2005physics}.
@@ -831,21 +887,26 @@ endurance to a value of $(82 \pm 46)$ $\cdot 10^3$ cycles. These values however
 are still an improvement compared to the RTP sample.
 
 The improved endurance could be a result of the reduced defect density of the
-flash lamp annealed films as shown in figure \ref{fig:res_IntCDD} using the
+flashlamp annealed films as shown in figure \ref{fig:res_IntCDD} using the
 method described in section \ref{sec:CV}. The measurements reveal a defect
-reduction of up to a factor of 3 for sample 3 and close to a factor of 2 for
-sample showing comparable $P_r$ and $E_c$ to the RTP sample. This is likely due
-to the reduced thermal budget for the FLA samples which generates less initial
-defects during the annealing step. However, after sufficiently many cycles the
-generated defects (vacancies) start to collect at the \ce{HZO} grain boundaries
-increasing the leakage through the oxide and causes the breakdown. However,
-the data studied here is not enough to rigorously conclude these theories
-\cite{pesic2016physical, athle2022improved}. See table \ref{tab:res_series1} for
-a summary of the attained values.
+reduction of up to a factor of 3 for samples with a low ferroelectric response
+and close to a factor of 2 for samples showing comparable $P_r$ and $E_c$ to
+the RTP sample. This is likely due to the reduced thermal budget for the FLA
+samples which generates less initial defects during the annealing step.
+However, after sufficiently many cycles the generated defects (vacancies) start
+to collect at the \ce{HZO} grain boundaries increasing the leakage through the
+oxide and causes the breakdown. However, the data studied here is not enough to
+rigorously conclude this hypothesis \cite{pesic2016physical, athle2022improved}.
+See table \ref{tab:res_series1} for a summary of the attained values for the
+sample annealed at a flash energy density of
+\SI{30}{\joule\per\centi\meter\squared} (peak annealing temperature of
+\SI{711}{\celsius}).
 
 \begin{table}[htbp]
-    \caption{Electrical characteristics for sample 4 in sample series
-    1. See table \ref{tab:app_IntC} for processing conditions.}\label{tab:res_series1}
+    \caption{Electrical characteristics for the sample annealed at
+        \SI{30}{\joule\per\centi\meter\squared} in series 1. The data is
+        measured from 10-15 devices on the sample. See table \ref{tab:app_IntC}
+    for detailed processing conditions.}\label{tab:res_series1}
     \begin{tabular}{rlrl}
         \toprule
         \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
@@ -859,34 +920,37 @@ a summary of the attained values.
     \end{tabular}
 \end{table}
 
-Although sample series 1 resulted in improved endurance and lower defect density
+Although series 1 resulted in improved endurance and lower defect density
 along with comparable PUND data to the RTP samples, the peak annealing
 temperature is still to high in order to significantly reduce the amount of
 defects in the film. A closer look at figure \ref{fig:res_IntCDD} and the barely
-ferroelectric sample 3 annealed at a flash intensity of
+ferroelectric sample annealed at a flash energy density of
 \SI{25}{\joule\per\centi\meter\squared} reveal a further reduction of the defect
 density at the cost of ferroelectric response (figure \ref{fig:res_IntCPr}).
 Maintaining that low peak annealing temperature over multiple flashes could
 result in improved PUND data while not inducing additional defects.
 
-For sample series 2 and 3, tabulated in table \ref{tab:app_NumA} and
-\ref{tab:app_NumC} respectively, the number of flashes were varied up to a
-maximum of 8 flashes for two different peak annealing temperatures at the onset
-of crystallization. The flashes were manually timed at an interval of
-approximately \SI{200}{\second}.
+For series 2 and 3 the number of flashes were varied up to a
+maximum of 8 flashes for two different flash energy densities,
+\SI{25}{\joule\per\centi\meter\squared} and
+\SI{20}{\joule\per\centi\meter\squared} respectively. See table
+\ref{tab:app_NumA} and \ref{tab:app_NumC} for detailed processing conditions.
+The flashes were manually timed at an interval of approximately
+\SI{200}{\second}.
 
-Resulting electrical characteristics of sample series 2 and 3 are shown in
+Resulting electrical characteristics of series 2 and 3 are shown in
 figures \ref{fig:res_NumACPUND} and \ref{fig:res_NumACEnduDD}. Figure
 \ref{fig:res_NumACPr} reveal an increased ferroelectric response with
 additional flashes up to a maximum of $22.98 \pm 1.02$
-\si{\micro\coulomb\per\centi\meter\squared} for sample series 2. Sample series 3
-on the other hand is not annealed to a significantly high peak temperature to
+\si{\micro\coulomb\per\centi\meter\squared} for series 2. Series 3
+on the other hand, annealed with a peak temperature of \SI{550}{\celsius}, is
+not annealed to a significantly high peak temperature to
 achieve ferroelectricity until 8 flashes; but even then not to a significant
-degree. Sample series 2 show a similar degradation of the ferroelectric response
-when flashing up to 8 times as with the increased flash intensity in figure
+degree. Series 2 show a similar degradation of the ferroelectric response
+when flashing up to 8 times as with the increased flash energy density in figure
 \ref{fig:res_IntCPr} where again further studies are needed to confirm its
 causes. The achieved coercive field as shown in figure \ref{fig:res_NumACEc}
-is comparable with both sample series 1 and the RTP sample.
+is comparable with both series 1 and the RTP sample.
 
 \begin{figure}[htbp]
     \centering
@@ -898,39 +962,47 @@ is comparable with both sample series 1 and the RTP sample.
         \includegraphics[width=\linewidth]{fig/FlashNumA+C_EcTrends.png}
         \caption{}\label{fig:res_NumACEc}    
     \end{subfigure}
-    \caption{Plotted PUND data from sample series 2 and 3. Figure a and b show the
+    \caption{Plotted PUND data from series 2 and 3
+        (\SI{25}{\joule\per\centi\meter\squared} and
+        \SI{20}{\joule\per\centi\meter\squared} respectively). Figure a and b show the
     evolution of the remnant polarization and the coercive field respectively
-    over varying number of flashes for two different peak annealing temperatures.
+    over varying number of flashes for the two different flash energy densities.
     Increasing the number of flashes with reduced peak annealing temperature
-    results in comparable ferroelectric response to the RTP sample as tabulated
-    in table \ref{tab:res_RTPref}.}\label{fig:res_NumACPUND}
+    compared to series 1 results in comparable ferroelectric response to the
+    RTP sample as tabulated in table \ref{tab:res_RTPref}.}\label{fig:res_NumACPUND}
 \end{figure}
 
-Similarly to sample series 1, figure \ref{fig:res_NumACEnduDD} show increased
-endurance as well as a lower defect density compared to the RTP sample. Sample 4
-of sample series 2 which has the most similar ferroelectric response to the RTP
-sample had an endurance in the range $(53 \pm 11)$ $\cdot 10^3$ cycles; an
-improvement of a factor of 2. Other samples in the same series showed longer
-endurances but at the cost of remnant polarization. More interestingly, the
-defect density of sample series 2 shown in figure \ref{fig:res_NumADD} does
-increase with multiple flashes reaching a saturated value at 4 flashes an
-beyond. This gives indication for the peak annealing temperature of
-\SI{630}{\celsius} still being to high in order to avoid the diffusion of
-defects in the samples. After 4 flashes the defect density reaches a saturated
-value where additional flashes only affects the already generated defects and
-assists in the pinning of the domains lowering $P_r$ as shown in figure
-\ref{fig:res_IntCPr}.
+Similarly to series 1, figure \ref{fig:res_NumACEnduDD} show increased
+endurance as well as a lower defect density compared to the RTP sample. The
+sample flashed 4 times with an energy density of
+\SI{25}{\joule\per\centi\meter\squared} (peak annealing temperature of
+\SI{630}{\celsius}) which has the most similar ferroelectric
+response to the RTP sample had an endurance in the range $(53 \pm 11)$ $\cdot
+10^3$ cycles; an improvement of a factor of 2. Other samples in the same series
+showed longer endurances but at the cost of remnant polarization. More
+interestingly, the defect density of series 2 shown in figure
+\ref{fig:res_NumADD} does increase with multiple flashes reaching a saturated
+value at 4 flashes and beyond. This gives indication for the peak annealing
+temperature of \SI{630}{\celsius} still being too high in order to avoid the
+diffusion of defects in the sample. After 4 flashes the defect density reaches
+a saturated value where additional flashes only affects the already generated
+defects and assists in the pinning of the domains lowering $P_r$ as shown in
+figure \ref{fig:res_NumACPr}.
 
-Sample series 3 does not give any ferroelectric response until the 8th flash as
-shown in figure \ref{fig:res_NumACPr}. This is likely due to the low total
-thermal impact of the \SI{5}{\milli\second} pulses at this peak annealing
+Series 3, annealed with an energy density of
+\SI{20}{\joule\per\centi\meter\squared} (peak temperature of
+\SI{550}{\celsius}), does not give any ferroelectric response until the 8th
+flash as shown in figure \ref{fig:res_NumACPr}. This is likely due to the low
+total thermal impact of the \SI{5}{\milli\second} pulses at this peak annealing
 temperature. However, as indicated by figure \ref{fig:res_NumCDD}, the defect
 density of these samples also increase with additional flashes, reaching
-approximately the same value as for sample series 2 but showing a significantly
+approximately the same value as for series 2 but showing a significantly
 lower ferroelectric response. This implies the total energy deposited in the
-samples during flashing is enough to induce additional defects but barely enough
-to crystallize the HZO to the orthorhombic phase. See table
-\ref{tab:res_series2} for a summary of the attained values for sample series 2.
+samples during flashing is enough to induce additional defects but barely
+enough to crystallize the HZO to the orthorhombic phase. See table
+\ref{tab:res_series2} for a summary of the attained values for the sample
+flashed 4 times at an energy density of \SI{25}{\joule\per\centi\meter\squared}
+(peak annealing temperature of \SI{630}{\celsius}) of series 2.
 
 \begin{figure}[htbp]
     \centering
@@ -950,19 +1022,22 @@ to crystallize the HZO to the orthorhombic phase. See table
         \includegraphics[width=\linewidth]{fig/FlashNumC_DDTrends.png}
         \caption{}\label{fig:res_NumCDD}    
     \end{subfigure}
-    \caption{Plotted endurance and defect density from sample series
-    2 and 3. Figures a and b show the data from samples series 2 while
-    figures c and d show the data from sample series
-    3. Increasing the number of flashes with reduced peak annealing temperature
+    \caption{Plotted endurance and defect density from series
+    2 and 3. Figures a and b show the data from series 2 while
+    figures c and d show the data from series 3. Figures a and c show the
+    endurance of all devices of the sample with one device highlighted. See
+    table \ref{tab:res_series2} for an aggregated value for multiple devices.
+    Increasing the number of flashes with reduced peak annealing temperature
     affects the defect density up to a point where additional flashes only assists
     in pinning the ferroelectric domains. The measured endurance of these samples
     are greater compared to the RTP samples.}\label{fig:res_NumACEnduDD}
 \end{figure}
 
 \begin{table}[htbp]
-    \caption{Electrical characteristics for sample 3 in sample series
-    2. See table \ref{tab:app_NumA} for processing
-    conditions.}\label{tab:res_series2}
+    \caption{Electrical characteristics for the sample flashed 4 times at an
+        energy density of \SI{25}{\joule\per\centi\meter\squared} in series 2.
+        The data is measured from 10-15 devices on the sample. See table
+        \ref{tab:app_NumA} for processing conditions.}\label{tab:res_series2}
     \begin{tabular}{rlrl}
         \toprule
         \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
@@ -976,8 +1051,8 @@ to crystallize the HZO to the orthorhombic phase. See table
     \end{tabular}
 \end{table}
 
-Sample series 1 through 3 show only slight performance improvements to the RTP
-samples due to the flash intensity being to high to facilitate additional
+Series 1 through 3 show only slight performance improvements to the RTP
+samples due to the flash energy density being to high to facilitate additional
 crystallization before inducing other effects or the time required for multiple
 flashes attributing to an increased defect density without further
 crystallization. Both these effects contribute to increased domain pinning and
@@ -986,24 +1061,23 @@ energy needed during annealing, the ALD temperature could be increased to
 potentially pre-crystallize the HZO during growth, hopefully resulting in a
 lower thermal budget needed in the annealing step.
 
-For sample series 4 and 5, tabulated in table \ref{tab:app_IntE} and
-\ref{tab:app_NumD} respectively, the growth temperature during annealing was
+For series 4 and 5 the growth temperature during ALD was
 increased from \SI{200}{\celsius} to \SI{270}{\celsius}. The HZO growth per
 cycle at this elevated temperature is reduced by roughly \SI{20}{\percent} in
 our equipment. To compensate for the lower growth per cycle the amount of cycles
 was increased to 60:60 to maintain the same HZO thickness as previous samples.
 
-The plotted data from sample series 4 is shown in figure \ref{fig:res_IntE}. The
+The plotted data from series 4 is shown in figure \ref{fig:res_IntE}. The
 increased growth temperature does indeed reduce the peak annealing temperature
-required to reach the onset of ferroelectricity in the samples as shown in
+required to reach the onset of ferroelectricity as shown in
 figure \ref{fig:res_IntEPr}. With the increased growth temperature the window in
 which a significant ferroelectric response is achieved is widened and a reduced
 coercive field is noted in figure \ref{fig:res_IntEEc}. However, with our
-selected peak annealing temperatures it is not clear whether we have surpassed
+selected flash energy densities it is not clear whether we have surpassed
 or yet to have reached the saturation point as noted at a growth temperature of
-\SI{200}{\celsius}. It would be interesting to increase the peak annealing
-temperature further to see the effects of a higher temperature anneal on the
-ferroelectric response.
+\SI{200}{\celsius}. It would be interesting to increase the flash energy
+density above \SI{30}{\joule\per\centi\meter\squared} to see the effects of a
+higher peak temperature anneal on the ferroelectric response.
 
 \begin{figure}[htbp]
     \centering
@@ -1023,14 +1097,19 @@ ferroelectric response.
         \includegraphics[width=\linewidth]{fig/FlashIntE_DDTrends.png}
         \caption{}\label{fig:res_IntEDD}    
     \end{subfigure}
-    \caption{Plotted data from sample series 4. Figures a and b show the
-    ferroelectric response of samples grown at different ALD temperatures for
-    varying peak annealing temperatures indicating that increasing growth
-    temperature assists in lowering the required temperature to reach the onset of
-    ferroelectricity. Figure c show improved endurance compared to the RTP
-    sample. Figure d shows an overall increase in defect density for samples grown
-    at elevated temperature but also a reduced impact of the annealing step on
-    defect generation.}\label{fig:res_IntE}
+    \caption{Plotted data from series 1 and 4 (ALD chamber temperature of
+        \SI{200}{\celsius} and \SI{270}{\celsius} respectively). Figures a and
+        b show the ferroelectric response of samples grown at different ALD
+        temperatures for varying peak annealing temperatures indicating that
+        increasing growth temperature assists in lowering the required
+        temperature to reach the onset of ferroelectricity. Figures c and d
+        show only data from series 4. Figure c show the endurance of all
+        devices of the samples with one device highlighted per sample. See
+        table \ref{tab:res_series4} for an aggregated value for multiple
+        devices showing improved endurance compared to the RTP sample. Figure d
+        shows an overall increase in defect density for samples grown at
+        elevated temperature but also a reduced impact of the annealing step on
+        defect generation.}\label{fig:res_IntE}
 \end{figure}
 
 The endurance of these samples show similar improvement as earlier FLA treated
@@ -1042,8 +1121,9 @@ reduced defect density of these samples. Interestingly, for these samples an
 overall increase in defect density is seen even for samples which do not show
 any ferroelectric response. Increasing the peak annealing temperature seem to
 have a reduced impact on defect generation and is ultimately comparable with
-previous FLA treated samples at a peak annealing temperature of
-\SI{711}{\celsius}. This revelation seem to show that the defect generation is
+previous FLA treated samples at a flash energy density of
+\SI{30}{\joule\per\centi\meter\squared} (peak annealing temperature of
+\SI{711}{\celsius}). This revelation seem to show that the defect generation is
 energy dependant and that defects that would be generated by the one
 \SI{30}{\joule\per\centi\meter\squared} are being generated during growth
 instead. With many defects already generated during growth, the peak annealing
@@ -1051,9 +1131,11 @@ temperature is not high enough to induce additional defects. See table
 \ref{tab:res_series4} for a summary of the measured values.
 
 \begin{table}[htbp]
-    \caption{Electrical characteristics for sample 3 in sample series
-    4. See table \ref{tab:app_IntE} for processing
-    conditions.}\label{tab:res_series4}
+    \caption{Electrical characteristics for the sample annealed at
+        \SI{30}{\joule\per\centi\meter\squared} with oxide grown at a chamber
+        temperature of \SI{270}{\celsius} in series 4. The data is measured
+        from 10-15 devices on the sample. See table \ref{tab:app_IntE} for
+        processing conditions.}\label{tab:res_series4}
     \begin{tabular}{rlrl}
         \toprule
         \multicolumn{4}{c}{PUND, Endurance and Defect Density}\\\midrule
@@ -1067,11 +1149,11 @@ temperature is not high enough to induce additional defects. See table
     \end{tabular}
 \end{table}
 
-Sample series 4 showed that increasing growth temperature assisted in lowering
+Series 4 showed that increasing growth temperature assisted in lowering
 the required peak annealing temperature to reach the onset of ferroelectricity
 in addition to a reduced impact on defect generation during annealing. However,
 to reach significant values of remnant polarization a high peak annealing
-temperature is still required. Using the knowledge from sample series 2 and 3 it
+temperature is still required. Using the knowledge from series 2 and 3 it
 might be possible to reduce the impact of annealing on defect generation even
 further. 
 
@@ -1091,31 +1173,35 @@ further.
     \end{subfigure}
     \begin{subfigure}{.4\linewidth}
         \includegraphics[width=\linewidth]{fig/FlashNumD_DDTrends.png}
-        \caption{}\label{fig:res_NumDDD}    
+        \caption{}\label{fig:res_NumDDD}
     \end{subfigure}
-    \caption{Plotted data from sample series 5. Figures a and b show the
+    \caption{Plotted data from series 5. Figures a and b show the
     ferroelectric response of the samples annealed at a peak annealing
     temperature of \SI{548}{\celsius} over varying number of flashes. The figures
     reveal that the temperature is not high enough to reach the onset of
     ferroelectricity despite having been grown at an elevated ALD temperature.
-    Figure c shows the supposed endurance that is only affects by the increasing
-    leakage current during cycling. Figure d affirms the higher defect density of
-    samples grown at the elevated growth temperature and shown no effect on defect
-    generation throughout the annealing steps.}\label{fig:res_NumD}
+    Figure c show the endurance of all devices of the samples with one device
+    highlighted per sample. But due to the low ferroelectric response the
+    readout is only affected by the increasing leakage current during cycling.
+    Figure d affirms the higher defect density of samples grown at the elevated
+    growth temperature and shown no effect on defect generation throughout the
+    annealing steps.}\label{fig:res_NumD}
 \end{figure}
 
-The plotted data from sample series 5 is shown in figure \ref{fig:res_NumD}. The
+The plotted data from series 5 is shown in figure \ref{fig:res_NumD}. The
 peak annealing temperature for these samples are \SI{548}{\celsius} in the
 attempt to incrementally reach the onset of ferroelectricity with additional
 flashes. Figures \ref{fig:res_NumDPr} and \ref{fig:res_NumDEc} show $P_r$ and
-$E_c$ respectively and reveal that the peak annealing temperature is not
-sufficient to reach the onset of ferroelectricity for up to 4 flashes. Although
-some response is measured for all samples, this is attributed to the noisiness
-of non-ferroelectric samples. Since the samples are not ferroelectric, the
-endurance in figure \ref{fig:res_NumDEndu} show only an increasing remnant
-polarization response due to increased leakage current during cycling. Figure
-\ref{fig:res_NumDDD} show the same elevated defect density as in figure
-\ref{fig:res_IntEDD} which stay consistent throughout annealing.
+$E_c$ respectively and reveal that the flash energy density of
+\SI{20}{\joule\per\centi\meter\squared} (peak annealing temperature of
+\SI{548}{\celsius}) is not sufficient to reach the onset of ferroelectricity
+for up to 4 flashes. Although some response is measured for all samples, this
+is attributed to the noisiness of non-ferroelectric samples. Since the samples
+are not ferroelectric, the endurance in figure \ref{fig:res_NumDEndu} show only
+an increasing remnant polarization response due to increased leakage current
+during cycling. Figure \ref{fig:res_NumDDD} show the same elevated defect
+density as in figure \ref{fig:res_IntEDD} which stay consistent throughout
+annealing.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclussion}\label{chap:conc}
@@ -1178,7 +1264,7 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 
 \chapter{Processing Parameters}\label{app:procparam}
 \begin{table}[htbp]
-    \caption{Selected processing conditions for sample series 1.}\label{tab:app_IntC}
+    \caption{Selected sample processing conditions for series 1.}\label{tab:app_IntC}
     \begin{tabular}{rlccccc}
         \toprule
         \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 & 5 \\\midrule
@@ -1194,8 +1280,7 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 \end{table}
 
 \begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    2.}\label{tab:app_NumA}
+    \caption{Selected sample processing conditions for series 2.}\label{tab:app_NumA}
     \begin{tabular}{rlcccc}
         \toprule
         \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 & 4 \\\midrule
@@ -1210,8 +1295,7 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 \end{table}
 
 \begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    3.}\label{tab:app_NumC}
+    \caption{Selected sample processing conditions for series 3.}\label{tab:app_NumC}
     \begin{tabular}{rlccc}
         \toprule
         \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
@@ -1226,8 +1310,7 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 \end{table}
 
 \begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    4.}\label{tab:app_IntE}
+    \caption{Selected sample processing conditions for series 4.}\label{tab:app_IntE}
     \begin{tabular}{rlccc}
         \toprule
         \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
@@ -1243,8 +1326,7 @@ while \ce{Si} is a carrier wafer part of the FLA experimental setup.}\label{tab:
 \end{table}
 
 \begin{table}[htbp]
-    \caption{Selected processing conditions for sample series
-    5.}\label{tab:app_NumD}
+    \caption{Selected sample processing conditions for series 5.}\label{tab:app_NumD}
     \begin{tabular}{rlccc}
         \toprule
         \multicolumn{2}{l}{Sample Number} & 1 & 2 & 3 \\\midrule
